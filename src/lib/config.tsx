@@ -7,9 +7,54 @@ export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
   name: "Karya Kilat",
-  description: "Jasa Pembuatan Microsite Premium di Gading Serpong, Tangerang.",
+  description: "Jasa Pembuatan Microsite Premium di Gading Serpong, Tangerang. Buat website profesional untuk personal branding & bisnis Anda dengan harga terjangkau.",
   url: "https://karyakilat.com",
-  keywords: ["Microsite", "Web Design", "Gading Serpong", "Tangerang", "Jasa Website"],
+  locale: "id_ID",
+  author: {
+    name: "Karya Kilat",
+    url: "https://karyakilat.com",
+  },
+  keywords: [
+    // Indonesian keywords
+    "jasa pembuatan website",
+    "microsite premium",
+    "web design tangerang",
+    "jasa website gading serpong",
+    "landing page profesional",
+    "personal branding online",
+    "website UMKM",
+    "website bisnis",
+    "jasa web developer",
+    "pembuatan landing page",
+    "website murah tangerang",
+    "jasa bikin website",
+    // English keywords
+    "microsite",
+    "web design",
+    "landing page",
+    "website development",
+    "web developer indonesia",
+    // Location keywords
+    "Gading Serpong",
+    "Tangerang",
+    "BSD",
+    "Serpong",
+  ],
+  business: {
+    type: "LocalBusiness",
+    priceRange: "$$",
+    address: {
+      streetAddress: "Gading Serpong",
+      addressLocality: "Tangerang",
+      addressRegion: "Banten",
+      postalCode: "15810",
+      addressCountry: "ID",
+    },
+    geo: {
+      latitude: -6.2297,
+      longitude: 106.6315,
+    },
+  },
   links: {
     email: "halo@karyakilat.com",
     twitter: "https://twitter.com/karyakilat",

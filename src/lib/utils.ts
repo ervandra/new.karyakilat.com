@@ -15,11 +15,13 @@ export function constructMetadata({
   title = siteConfig.name,
   description = siteConfig.description,
   image = absoluteUrl("/og"),
+  noIndex = false,
   ...props
 }: {
   title?: string;
   description?: string;
   image?: string;
+  noIndex?: boolean;
   [key: string]: Metadata[keyof Metadata];
 }): Metadata {
   return {
@@ -29,6 +31,20 @@ export function constructMetadata({
     },
     description: description || siteConfig.description,
     keywords: siteConfig.keywords,
+    authors: [siteConfig.author],
+    creator: siteConfig.name,
+    publisher: siteConfig.name,
+    robots: {
+      index: !noIndex,
+      follow: !noIndex,
+      googleBot: {
+        index: !noIndex,
+        follow: !noIndex,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
       title,
       description,
@@ -43,16 +59,21 @@ export function constructMetadata({
         },
       ],
       type: "website",
-      locale: "en_US",
+      locale: siteConfig.locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+      creator: "@karyakilat",
+      site: "@karyakilat",
+    },
+    alternates: {
+      canonical: siteConfig.url,
     },
     icons: "/favicon.ico",
     metadataBase: new URL(siteConfig.url),
-    authors: [
-      {
-        name: siteConfig.name,
-        url: siteConfig.url,
-      },
-    ],
     ...props,
   };
 }

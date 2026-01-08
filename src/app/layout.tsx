@@ -1,6 +1,7 @@
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { StructuredData } from "@/components/structured-data";
 import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import { Fira_Sans } from "next/font/google";
@@ -28,7 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={cn(
           firaSans.variable,
@@ -48,3 +52,4 @@ export default function RootLayout({
     </html>
   );
 }
+
