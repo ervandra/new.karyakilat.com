@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-const ease = [0.16, 1, 0.3, 1];
+const ease = [0.16, 1, 0.3, 1] as const;
 
 function HeroPill() {
   return (
