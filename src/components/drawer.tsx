@@ -1,3 +1,5 @@
+"use client";
+
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -7,14 +9,23 @@ import {
   DrawerHeader,
   DrawerTrigger,
   DrawerDescription,
-  DrawerTitle
+  DrawerTitle,
+  DrawerClose,
 } from "@/components/ui/drawer";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IoMenuSharp } from "react-icons/io5";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-export default function drawerDemo() {
+import { useLeadCapture } from "@/components/lead-capture-context";
+
+export default function DrawerDemo() {
+  const { openModal } = useLeadCapture();
+
+  const handleOpenModal = () => {
+    openModal();
+  };
+
   return (
     <Drawer>
       <DrawerTrigger>
@@ -55,22 +66,18 @@ export default function drawerDemo() {
           </nav>
         </DrawerHeader>
         <DrawerFooter>
-          <Link
-            href="/login"
-            className={buttonVariants({ variant: "outline" })}
-          >
-            Login
-          </Link>
-          <Link
-            href="/signup"
-            className={cn(
-              buttonVariants({ variant: "default" }),
-              "w-full sm:w-auto text-background flex gap-2"
-            )}
-          >
-            <Icons.logo className="h-6 w-6" />
-            Get Started for Free
-          </Link>
+          <DrawerClose asChild>
+            <button
+              onClick={handleOpenModal}
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "w-full text-background flex gap-2 justify-center"
+              )}
+            >
+              <Icons.logo className="h-6 w-6" />
+              Buat Microsite Sekarang
+            </button>
+          </DrawerClose>
         </DrawerFooter>
       </DrawerContent>
     </Drawer>

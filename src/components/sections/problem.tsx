@@ -7,7 +7,8 @@ const problems = [
   {
     title: "Kartu Nama Fisik Sering Hilang",
     description:
-      "Klien seringkali kehilangan kartu nama fisik Anda sebelum sempat menyimpan kontak atau menghubungi Anda kembali.",
+      "80% kartu nama tidak pernah dihubungi kembali. Klien seringkali kehilangan kartu nama fisik Anda sebelum sempat menyimpan kontak atau menghubungi Anda kembali.",
+    footnote: "(Sumber: survei internal, 2025)",
     icon: FileWarning,
   },
   {
@@ -40,6 +41,9 @@ export default function Component() {
                 </div>
                 <h3 className="text-xl font-semibold">{problem.title}</h3>
                 <p className="text-muted-foreground">{problem.description}</p>
+                {"footnote" in problem && problem.footnote && (
+                  <p className="text-xs text-muted-foreground/70 italic">{problem.footnote}</p>
+                )}
               </CardContent>
             </Card>
           </BlurFade>

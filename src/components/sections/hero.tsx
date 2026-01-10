@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { PlayCircle } from "lucide-react";
 
 import { Icons } from "@/components/icons";
-import HeroVideoDialog from "@/components/magicui/hero-video";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
+import { useLeadCapture } from "@/components/lead-capture-context";
 import Link from "next/link";
 
 const ease = [0.16, 1, 0.3, 1] as const;
@@ -39,25 +40,11 @@ function HeroTitles() {
         transition={{
           duration: 1,
           ease,
-          staggerChildren: 0.2,
         }}
       >
-        Bangun Kredibilitas Online Anda yang
-        {["Mudah", "Cepat", "Elegan", "Profesional"].map((text, index) => (
-          <motion.span
-            key={index}
-            className="inline-block px-1 md:px-2 text-balance font-semibold text-primary"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              delay: index * 0.2,
-              ease,
-            }}
-          >
-            {text}
-          </motion.span>
-        ))}
+        Dari Kartu Nama ke{" "}
+        <span className="text-primary font-semibold">Kredibilitas Digital</span>{" "}
+        dalam 24 Jam
       </motion.h1>
       <motion.p
         className="mx-auto max-w-xl text-center text-lg leading-7 text-muted-foreground sm:text-xl sm:leading-9 text-balance"
@@ -69,13 +56,15 @@ function HeroTitles() {
           ease,
         }}
       >
-        Jasa pembuatan microsite premium untuk profesional di Gading Serpong & Tangerang. Tingkatkan kepercayaan klien dengan personal branding yang kuat.
+        Microsite premium untuk profesional. Tidak perlu coding. Tidak perlu ribet. Siap dalam 1x24 jam.
       </motion.p>
     </div>
   );
 }
 
 function HeroCTA() {
+  const { openModal } = useLeadCapture();
+
   return (
     <>
       <motion.div
@@ -84,8 +73,8 @@ function HeroCTA() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.8, ease }}
       >
-        <Link
-          href="#contact"
+        <button
+          onClick={openModal}
           className={cn(
             buttonVariants({ variant: "default" }),
             "w-full sm:w-auto text-background flex gap-2"
@@ -93,7 +82,7 @@ function HeroCTA() {
         >
           <Icons.logo className="h-6 w-6" />
           Buat Microsite Sekarang
-        </Link>
+        </button>
         <Link
           href={siteConfig.links.whatsapp}
           target="_blank"
@@ -125,13 +114,13 @@ function HeroImage() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.2, duration: 1, ease }}
     >
-      <HeroVideoDialog
-        animationStyle="from-center"
-        videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-        thumbnailSrc="/dashboard.png"
-        thumbnailAlt="Hero Video"
-        className="border rounded-lg shadow-lg max-w-screen-lg mt-16"
-      />
+      <div className="relative aspect-video w-full max-w-screen-lg mt-16 bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg border">
+        <div className="text-center text-white">
+          <PlayCircle className="w-16 h-16 mx-auto mb-4 animate-pulse" />
+          <p className="text-lg font-semibold">Lihat Demo Microsite</p>
+          <p className="text-sm opacity-80">(Video akan segera hadir)</p>
+        </div>
+      </div>
     </motion.div>
   );
 }

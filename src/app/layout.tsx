@@ -2,6 +2,8 @@ import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { StructuredData } from "@/components/structured-data";
+import { LeadCaptureProvider } from "@/components/lead-capture-context";
+import LeadCaptureModal from "@/components/lead-capture-modal";
 import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import { Fira_Sans } from "next/font/google";
@@ -44,7 +46,10 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem={false}
         >
-          {children}
+          <LeadCaptureProvider>
+            {children}
+            <LeadCaptureModal />
+          </LeadCaptureProvider>
           <ThemeToggle />
           <TailwindIndicator />
         </ThemeProvider>

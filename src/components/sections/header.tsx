@@ -1,16 +1,18 @@
 "use client";
 
-import Drawer from "@/components/drawer";
 import { Icons } from "@/components/icons";
-import Menu from "@/components/menu";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useLeadCapture } from "@/components/lead-capture-context";
+import Menu from "@/components/menu";
+import Drawer from "@/components/drawer";
 
 export default function Header() {
   const [addBorder, setAddBorder] = useState(false);
+  const { openModal } = useLeadCapture();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,22 +53,16 @@ export default function Header() {
             </nav>
 
             <div className="gap-2 flex">
-              <Link
-                href="/login"
-                className={buttonVariants({ variant: "outline" })}
-              >
-                Login
-              </Link>
-              <Link
-                href="/signup"
+              <button
+                onClick={openModal}
                 className={cn(
                   buttonVariants({ variant: "default" }),
                   "w-full sm:w-auto text-background flex gap-2"
                 )}
               >
                 <Icons.logo className="h-6 w-6" />
-                Get Started for Free
-              </Link>
+                Buat Microsite Sekarang
+              </button>
             </div>
           </div>
         </div>

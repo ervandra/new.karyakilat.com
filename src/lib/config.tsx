@@ -28,6 +28,9 @@ export const siteConfig = {
     "pembuatan landing page",
     "website murah tangerang",
     "jasa bikin website",
+    "microsite gading serpong",
+    "link in bio premium",
+    "kartu nama digital",
     // English keywords
     "microsite",
     "web design",
@@ -42,7 +45,7 @@ export const siteConfig = {
   ],
   business: {
     type: "LocalBusiness",
-    priceRange: "$$",
+    priceRange: "Rp 99,000 - Rp 399,000",
     address: {
       streetAddress: "Gading Serpong",
       addressLocality: "Tangerang",
