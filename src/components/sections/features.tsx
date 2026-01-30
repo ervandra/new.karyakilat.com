@@ -1,42 +1,63 @@
-import Features from "@/components/features-horizontal";
 import Section from "@/components/section";
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Globe, Mail, Store, User } from "lucide-react";
 
-const data = [
+const features = [
   {
-    id: 1,
-    title: "Microsite Personal",
-    content: "Ideal untuk agen asuransi, properti, dan freelancer. Tampilkan profil lengkap, portofolio, dan kontak dalam satu link yang elegan.",
-    image: "/dashboard.png",
-    icon: <User className="h-6 w-6 text-primary" />,
+    Icon: User,
+    name: "Personal Authority System",
+    description: "Ideal untuk agen & freelancer. Profil lengkap, portofolio, dan kontak dalam satu pusat kendali digital.",
+    href: "#",
+    cta: "Lihat Demo",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
-    id: 2,
-    title: "Microsite Bisnis",
-    content: "Solusi untuk UMKM dan bisnis lokal. Tampilkan katalog produk, lokasi Google Map, jam operasional, dan kontak bisnis dalam satu halaman.",
-    image: "/dashboard.png",
-    icon: <Store className="h-6 w-6 text-primary" />,
+    Icon: Store,
+    name: "Business Command Center",
+    description: "Untuk UMKM & Bisnis Lokal. Katalog, Maps, dan Operasional yang terintegrasi.",
+    href: "#",
+    cta: "Lihat Demo",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
-    id: 3,
-    title: "Undangan Digital",
-    content: "Undangan pernikahan atau event yang elegan, hemat biaya cetak, dan mudah disebarkan melalui WhatsApp atau media sosial.",
-    image: "/dashboard.png",
-    icon: <Mail className="h-6 w-6 text-primary" />,
+    Icon: Globe,
+    name: "Custom Domain Mastery",
+    description: "Upgrade ke namakamu.com. Hapus kesan 'gratisan' dan bangun aset digital yang sesungguhnya.",
+    href: "#",
+    cta: "Cek Domain",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
-    id: 4,
-    title: "Custom Domain",
-    content: "Upgrade branding Anda dengan nama domain sendiri (contoh: namakamu.com) agar terlihat lebih kredibel dan profesional di mata klien.",
-    image: "/dashboard.png",
-    icon: <Globe className="h-6 w-6 text-primary" />,
+    Icon: Mail,
+    name: "Invitation Engine",
+    description: "Sistem undangan digital yang elegan, hemat biaya, dan viral-ready (WhatsApp optimized).",
+    href: "#",
+    cta: "Lihat Contoh",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+  },
+  {
+    Icon: User,
+    name: "Concierge Service (Beta)",
+    description: "Anda sibuk? Tim kami yang bangunkan sistemnya untuk Anda. Terima beres.",
+    href: "#",
+    cta: "Hubungi Tim",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
 ];
 
 export default function Component() {
   return (
-    <Section title="Layanan Kami" subtitle="Solusi digital untuk profesional modern">
-      <Features collapseDelay={5000} linePosition="bottom" data={data} />
+    <Section title="Sistem, Bukan Sekadar Web" subtitle="Infrastruktur digital lengkap untuk pertumbuhan karier Anda.">
+      <BentoGrid className="lg:grid-rows-3">
+        {features.map((feature) => (
+          <BentoCard key={feature.name} {...feature} />
+        ))}
+      </BentoGrid>
     </Section>
   );
 }

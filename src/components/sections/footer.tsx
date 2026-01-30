@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="font-bold text-white text-lg">Karya Kilat © 2026</p>
-            <p className="text-sm">Microsite Premium untuk Profesional Modern</p>
-            <p className="text-sm mt-2">📍 Gading Serpong, Tangerang | 📱 0851-2435-4868</p>
+            <p className="text-sm">Sistem Kredibilitas Digital untuk Profesional Modern</p>
+            <p className="text-sm mt-2">Gading Serpong, Tangerang | 0851-2435-4868</p>
           </div>
           <div className="flex gap-6 text-sm">
             <Link href="/privacy" className="hover:text-white transition-colors">

@@ -34,7 +34,7 @@ function HeroTitles() {
   return (
     <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
       <motion.h1
-        className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl"
+        className="text-center text-5xl font-bold leading-tight tracking-tighter text-foreground sm:text-6xl md:text-7xl"
         initial={{ filter: "blur(10px)", opacity: 0, y: 50 }}
         animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
         transition={{
@@ -42,9 +42,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        Dari Kartu Nama ke{" "}
-        <span className="text-primary font-semibold">Kredibilitas Digital</span>{" "}
-        dalam 24 Jam
+        Bangun <span className="text-primary">Aset Digital</span> Anda dalam 24 Jam
       </motion.h1>
       <motion.p
         className="mx-auto max-w-xl text-center text-lg leading-7 text-muted-foreground sm:text-xl sm:leading-9 text-balance"
@@ -56,7 +54,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        Microsite premium untuk profesional. Tidak perlu coding. Tidak perlu ribet. Siap dalam 1x24 jam.
+        Transformasi profesional Anda dari sekadar kontak menjadi sistem otoritas digital. 1 Link. 100% Kredibilitas.
       </motion.p>
     </div>
   );
@@ -138,3 +136,4 @@ export default function Hero2() {
     </section>
   );
 }
+

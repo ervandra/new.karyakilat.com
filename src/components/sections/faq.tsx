@@ -9,20 +9,24 @@ import { siteConfig } from "@/lib/config";
 
 const faqs = [
   {
-    question: "Berapa lama proses pembuatannya?",
-    answer: "Proses pembuatan microsite sangat cepat, maksimal 1x24 jam setelah data lengkap (foto, bio, kontak) kami terima.",
+    question: "Berapa lama proses pembuatan aset digital saya?",
+    answer: "Prosesnya sangat cepat. Maksimal 1x24 jam setelah data lengkap (foto, bio, kontak) kami terima, sistem digital Anda sudah online.",
   },
   {
-    question: "Apa saja data yang perlu disiapkan?",
-    answer: "Anda cukup menyiapkan foto profil/produk berkualitas, deskripsi singkat (bio), daftar layanan, link sosial media, dan nomor WhatsApp.",
+    question: "Apa saja data yang perlu saya siapkan?",
+    answer: "Cukup siapkan: foto profil berkualitas, deskripsi singkat (bio), daftar layanan/produk, link media sosial, dan nomor WhatsApp untuk tombol CTA.",
   },
   {
-    question: "Apakah ada biaya bulanan?",
-    answer: "Untuk paket Basic Microsite, TIDAK ADA biaya bulanan. Anda cukup membayar sekali untuk masa aktif selamanya (Lifetime).",
+    question: "Apakah ada biaya berlangganan bulanan?",
+    answer: "TIDAK. Paket Basic adalah pembayaran sekali untuk selamanya (Lifetime). Aset digital Anda akan terus online tanpa biaya bulanan.",
   },
   {
-    question: "Apakah bisa revisi?",
-    answer: "Tentu! Kami memberikan kesempatan revisi minor maksimal 2x setelah microsite jadi, untuk memastikan hasilnya sesuai keinginan Anda.",
+    question: "Bisa revisi kalau ada yang kurang pas?",
+    answer: "Tentu! Revisi minor hingga 2x gratis setelah jadi, untuk memastikan hasilnya sesuai dengan identitas profesional Anda.",
+  },
+  {
+    question: "Apa bedanya dengan Linktree atau link bio gratis?",
+    answer: "Perbedaan utamanya adalah kepemilikan dan profesionalisme. Karya Kilat membangun aset digital yang Anda miliki, bukan sekadar profil di platform orang lain. Desain premium, custom, dan tidak ada branding pihak ketiga.",
   },
 ];
 

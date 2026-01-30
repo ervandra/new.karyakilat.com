@@ -15,8 +15,8 @@ export default function CtaSection() {
   return (
     <Section
       id="cta"
-      title="Siap Meningkatkan Personal Branding?"
-      subtitle="Jangan tunda lagi, miliki microsite premium sekarang."
+      title="Siap Bangun Aset Digital Anda?"
+      subtitle="Bergabung dengan puluhan profesional yang sudah meningkatkan kredibilitas mereka."
       className="bg-primary/10 rounded-xl py-16"
     >
       <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
@@ -28,7 +28,7 @@ export default function CtaSection() {
           )}
         >
           <Icons.logo className="h-6 w-6" />
-          Buat Microsite Sekarang
+          Mulai Sekarang
         </button>
         <Link
           href={siteConfig.links.whatsapp}

@@ -31,7 +31,7 @@ const data = [
 
 export default function Component() {
   return (
-    <Section title="How it works" subtitle="Just 3 steps to get started">
+    <Section title="Cara Kerja" subtitle="Hanya 3 langkah untuk memulai">
       <Features data={data} />
     </Section>
   );

@@ -14,25 +14,25 @@ const testimonials = [
     name: "Budi Santoso",
     role: "Agen Asuransi",
     quote:
-      "Sejak pakai microsite dari Karya Kilat, klien lebih percaya dan langsung kontak ke WA. Tampilannya jauh lebih profesional dibanding kartu nama biasa.",
+      "Karya Kilat bukan sekadar bikin microsite, tapi membangun sistem kredibilitas saya. Klien sekarang langsung percaya karena profil digital saya terlihat sangat profesional.",
   },
   {
     name: "Siti Aminah",
     role: "Property Agent",
     quote:
-      "Desainnya elegan dan mewah. Sangat membantu saya menampilkan listing properti unggulan dalam satu link yang mudah dibagikan.",
+      "Dulu saya hanya punya kartu nama, sekarang punya command center digital. Semua listing, testimoni, dan kontak tersaji rapi dalam satu link. Keren banget!",
   },
   {
     name: "Reza Pratama",
     role: "Freelance Desainer",
     quote:
-      "Prosesnya super cepat, pagi kirim data, sore sudah jadi. Sangat recommended buat freelancer yang butuh portofolio online instan.",
+      "Prosesnya super cepat—pagi kirim data, sore sudah jadi. Portofolio saya jadi terlihat seperti punya tim sendiri. Recommended buat freelancer serius!",
   },
   {
     name: "Tanya Larasati",
     role: "Content Creator",
     quote:
-      "Link di bio Instagram jadi jauh lebih aesthetic. Suka banget sama template-nya yang clean dan modern.",
+      "Link di bio Instagram saya sekarang bukan link biasa, tapi aset digital. Aesthetic, clean, dan yang penting: menghasilkan. Banyak yang langsung DM setelah lihat.",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function Component() {
   return (
     <Section
       title="Kata Mereka"
-      subtitle="Profesional yang puas dengan Karya Kilat"
+      subtitle="Profesional yang sudah transformasi digital bersama Karya Kilat."
     >
       <Carousel>
         <div className="max-w-2xl mx-auto relative">

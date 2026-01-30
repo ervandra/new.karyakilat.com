@@ -5,22 +5,22 @@ import { FileWarning, Link, Wallet } from "lucide-react";
 
 const problems = [
   {
-    title: "Kartu Nama Fisik Sering Hilang",
+    title: "Kartu Nama = Jalan Buntu",
     description:
-      "80% kartu nama tidak pernah dihubungi kembali. Klien seringkali kehilangan kartu nama fisik Anda sebelum sempat menyimpan kontak atau menghubungi Anda kembali.",
-    footnote: "(Sumber: survei internal, 2025)",
+      "80% kartu nama fisik tidak pernah ditindaklanjuti. Klien kehilangan kartu Anda, dan Anda kehilangan peluang bisnis.",
+    footnote: "(Sumber: Survei Internal, 2025)",
     icon: FileWarning,
   },
   {
-    title: "Link Bio Kurang Menarik",
+    title: "Link Bio = Terlihat Gratisan",
     description:
-      "Tampilan link bio standar (seperti Linktree polos) tidak mencerminkan profesionalitas dan branding premium Anda.",
+      "Tampilan Linktree polos tidak menunjukkan otoritas. Di mata klien, Anda terlihat sama saja dengan jutaan pengguna lain.",
     icon: Link,
   },
   {
-    title: "Website Custom Mahal & Ribet",
+    title: "Website Custom = Mahal & Lama",
     description:
-      "Pembuatan website custom konvensional seringkali membutuhkan biaya jutaan rupiah dan waktu pengerjaan berminggu-minggu.",
+      "Agensi web menagih jutaan rupiah dan butuh waktu berminggu-minggu. Profesional sibuk tidak punya waktu untuk itu.",
     icon: Wallet,
   },
 ];
@@ -28,8 +28,8 @@ const problems = [
 export default function Component() {
   return (
     <Section
-      title="Masalah"
-      subtitle="Tantangan Profesional di Era Digital."
+      title="Masalah Utama"
+      subtitle="Kenapa profesional kehilangan kredibilitas di era digital?"
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         {problems.map((problem, index) => (
