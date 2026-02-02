@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { useLeadCapture } from "@/components/lead-capture-context";
-import { MessageCircle } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 export default function CtaSection() {
   const { openModal } = useLeadCapture();
@@ -15,33 +15,37 @@ export default function CtaSection() {
   return (
     <Section
       id="cta"
-      title="Siap Bangun Aset Digital Anda?"
-      subtitle="Bergabung dengan puluhan profesional yang sudah meningkatkan kredibilitas mereka."
-      className="bg-primary/10 rounded-xl py-16"
+      title="Ready to Close the Reputation Gap?"
+      subtitle="Join BSD & Gading Serpong leaders who've elevated their digital presence."
+      className="bg-card rounded-2xl py-16 border border-border/50"
     >
       <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
         <button
           onClick={openModal}
           className={cn(
-            buttonVariants({ variant: "default" }),
-            "w-full sm:w-auto text-background flex gap-2"
+            buttonVariants({ variant: "default", size: "lg" }),
+            "w-full sm:w-auto text-primary-foreground flex gap-2 gold-glow"
           )}
         >
-          <Icons.logo className="h-6 w-6" />
-          Mulai Sekarang
+          <Icons.logo className="h-5 w-5" />
+          Request Private Invitation
         </button>
         <Link
           href={siteConfig.links.whatsapp}
           target="_blank"
           className={cn(
-            buttonVariants({ variant: "outline" }),
-            "w-full sm:w-auto flex gap-2"
+            buttonVariants({ variant: "outline", size: "lg" }),
+            "w-full sm:w-auto flex gap-2 border-primary/30 hover:bg-primary/10"
           )}
         >
-          <MessageCircle className="h-5 w-5" />
-          Hubungi Sales via WhatsApp
+          <Calendar className="h-5 w-5" />
+          Book Strategy Call
         </Link>
       </div>
+      <p className="text-center text-sm text-muted-foreground mt-6">
+        Limited to <span className="text-primary font-medium">3 partnerships</span> per month
+      </p>
     </Section>
   );
 }
+

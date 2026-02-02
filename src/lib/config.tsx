@@ -1,13 +1,11 @@
 import { Icons } from "@/components/icons";
-import { FaTwitter } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
   name: "Karya Kilat",
-  description: "Bangun Aset Digital untuk Profesional. Sistem kredibilitas online yang siap dalam 24 jam. Lebih dari sekadar microsite—ini adalah pusat kendali personal branding Anda.",
+  description: "White-glove digital infrastructure untuk CEO & komunitas eksklusif mereka. Zero hassle. Maximum authority. Digital Headquarters untuk pemimpin bisnis BSD & Gading Serpong.",
   url: "https://karyakilat.com",
   locale: "id_ID",
   author: {
@@ -15,33 +13,31 @@ export const siteConfig = {
     url: "https://karyakilat.com",
   },
   keywords: [
-    // Core keywords
-    "aset digital profesional",
-    "sistem kredibilitas online",
-    "personal branding digital",
-    "microsite premium",
-    // Indonesian local keywords
-    "jasa pembuatan website tangerang",
-    "web design gading serpong",
-    "landing page profesional",
-    "website UMKM",
-    "website bisnis lokal",
-    "kartu nama digital",
-    "link in bio premium",
-    // English keywords
-    "microsite",
-    "digital authority",
-    "professional branding",
-    "web developer indonesia",
+    // Core premium keywords
+    "digital headquarters",
+    "executive digital presence",
+    "premium web design indonesia",
+    "white-glove web service",
+    "bespoke website design",
+    // Indonesian premium keywords
+    "jasa website premium tangerang",
+    "web design eksekutif gading serpong",
+    "website bisnis premium bsd",
+    "digital concierge indonesia",
+    "website CEO indonesia",
+    // Local authority keywords
+    "digital partner BSD",
+    "tech partner Gading Serpong",
+    "website premium serpong",
     // Location keywords
     "Gading Serpong",
-    "Tangerang",
-    "BSD",
+    "BSD City",
+    "Tangerang Selatan",
     "Serpong",
   ],
   business: {
     type: "LocalBusiness",
-    priceRange: "Rp 99,000 - Rp 399,000",
+    priceRange: "Rp 5.000.000 - Rp 35.000.000+",
     address: {
       streetAddress: "Gading Serpong",
       addressLocality: "Tangerang",
@@ -60,39 +56,39 @@ export const siteConfig = {
     discord: "https://discord.gg/karyakilat",
     github: "https://github.com/karyakilat",
     instagram: "https://instagram.com/karyakilat",
-    whatsapp: "https://wa.me/6285124354868",
+    whatsapp: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20Digital%20Headquarters",
   },
   header: [
     {
-      trigger: "Layanan",
+      trigger: "Services",
       content: {
         main: {
           icon: <Icons.logo className="h-6 w-6" />,
-          title: "Desain Premium",
-          description: "Pilihan desain eksklusif untuk personal branding Anda.",
+          title: "Digital Headquarters",
+          description: "Bespoke digital infrastructure untuk executive & business owner.",
           href: "#features",
         },
         items: [
           {
             href: "#features",
-            title: "Microsite Personal",
-            description: "Untuk agen & freelancer.",
+            title: "Executive Presence",
+            description: "Personal authority hub untuk CEO & founders.",
           },
           {
             href: "#features",
-            title: "Microsite Bisnis",
-            description: "Untuk UMKM & toko lokal.",
+            title: "Command Center",
+            description: "Full digital ecosystem untuk bisnis premium.",
           },
         ],
       },
     },
     {
       href: "#how-it-works",
-      label: "Cara Kerja",
+      label: "Process",
     },
     {
       href: "#testimonials",
-      label: "Testimoni",
+      label: "Clients",
     },
     {
       href: "#faq",
@@ -103,22 +99,22 @@ export const siteConfig = {
   faqs: [],
   footer: [
     {
-      title: "Layanan",
+      title: "Services",
       links: [
-        { href: "#features", text: "Microsite Personal", icon: null },
-        { href: "#features", text: "Microsite Bisnis", icon: null },
-        { href: "#features", text: "Custom Domain", icon: null },
+        { href: "#features", text: "Executive Presence", icon: null },
+        { href: "#features", text: "Command Center", icon: null },
+        { href: "#features", text: "Market Authority", icon: null },
       ],
     },
     {
-      title: "Perusahaan",
+      title: "Company",
       links: [
-        { href: "#", text: "Tentang Kami", icon: null },
-        { href: "#cta", text: "Kontak", icon: null },
+        { href: "#", text: "About", icon: null },
+        { href: "#cta", text: "Contact", icon: null },
       ],
     },
     {
-      title: "Social",
+      title: "Connect",
       links: [
         {
           href: "#",
@@ -127,7 +123,7 @@ export const siteConfig = {
         },
         {
           href: "https://wa.me/6285124354868",
-          text: "Whatsapp",
+          text: "WhatsApp",
           icon: <Icons.whatsapp />,
         },
       ],
@@ -136,3 +132,4 @@ export const siteConfig = {
 };
 
 export type SiteConfig = typeof siteConfig;
+

@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <header
       className={
-        "sticky top-0 z-50 py-2 bg-background/60 backdrop-blur"
+        "sticky top-0 z-50 py-2 bg-background/80 backdrop-blur-md"
       }
     >
       <div className="flex justify-between items-center container mx-auto">
@@ -43,7 +43,7 @@ export default function Header() {
           className="relative mr-6 flex items-center space-x-2"
         >
           <Icons.logo className="w-auto h-[40px]" />
-          <span className="font-bold text-xl">{siteConfig.name}</span>
+          <span className="font-bold text-xl font-serif">{siteConfig.name}</span>
         </Link>
 
         <div className="hidden lg:block">
@@ -57,11 +57,11 @@ export default function Header() {
                 onClick={openModal}
                 className={cn(
                   buttonVariants({ variant: "default" }),
-                  "w-full sm:w-auto text-background flex gap-2"
+                  "w-full sm:w-auto text-primary-foreground flex gap-2"
                 )}
               >
-                <Icons.logo className="h-6 w-6" />
-                Buat Microsite Sekarang
+                <Icons.logo className="h-5 w-5" />
+                Request Invitation
               </button>
             </div>
           </div>
@@ -72,10 +72,11 @@ export default function Header() {
       </div>
       <hr
         className={cn(
-          "absolute w-full bottom-0 transition-opacity duration-300 ease-in-out",
+          "absolute w-full bottom-0 transition-opacity duration-300 ease-in-out border-border/50",
           addBorder ? "opacity-100" : "opacity-0"
         )}
       />
     </header>
   );
 }
+

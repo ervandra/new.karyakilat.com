@@ -3,108 +3,153 @@
 import Section from "@/components/section";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Check } from "lucide-react";
+import { Check, Crown, Building2, Globe } from "lucide-react";
 import Link from "next/link";
+import { siteConfig } from "@/lib/config";
+import { useLeadCapture } from "@/components/lead-capture-context";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function Pricing() {
+  const { openModal } = useLeadCapture();
+
   const plans = [
     {
-      name: "BASIC",
-      price: "Rp 99rb",
-      period: "/ bulan",
-      description: "Cocok untuk personal branding pemula",
+      name: "Professional Launchpad",
+      price: "Available on Request",
+      period: "",
+      description: "One-page authority hub for executives who need immediate credibility",
       features: [
-        "1 Halaman Microsite Premium",
-        "Custom Subdomain (karyakilat.com/anda)",
-        "5 Section Konten (Profil, Layanan, Portofolio, Testimoni, Kontak)",
-        "Tombol WhatsApp Terintegrasi",
-        "Mobile Responsive Design",
-        "Revisi Desain Unlimited (7 hari pertama)",
-        "Lifetime Hosting & Maintenance",
+        "Bespoke single-page design",
+        "Custom domain setup",
+        "WhatsApp integration",
+        "Mobile-first optimization",
+        "30-day priority support",
+        "Training walkthrough",
       ],
-      buttonText: "Pilih Basic",
-      href: "https://wa.me/6285124354868?text=Halo%2C%20saya%20mau%20order%20paket%20BASIC",
+      buttonText: "Request Details",
+      href: siteConfig.links.whatsapp,
       isPopular: false,
       disabled: false,
+      icon: <Globe className="w-5 h-5" />,
     },
     {
-      name: "STANDARD",
-      price: "Coming Soon",
+      name: "Executive Command",
+      price: "Bespoke Strategy",
       period: "",
-      description: "Fitur lebih lengkap untuk bisnis berkembang.",
-      features: [],
-      buttonText: "Segera Hadir",
+      description: "Full digital headquarters with ongoing concierge management",
+      features: [
+        "Multi-page command center",
+        "Brand strategy session",
+        "Professional copywriting",
+        "Advanced integrations (CRM, booking)",
+        "6-month concierge support",
+        "Monthly content updates",
+        "Dedicated account manager",
+      ],
+      buttonText: "Book Consultation",
       href: "#",
-      isPopular: false,
-      disabled: true,
+      isPopular: true,
+      disabled: false,
+      icon: <Crown className="w-5 h-5" />,
     },
     {
-      name: "PRO",
-      price: "Coming Soon",
+      name: "Market Authority",
+      price: "Invitation Only",
       period: "",
-      description: "Solusi ultimate untuk profesional.",
-      features: [],
-      buttonText: "Segera Hadir",
-      href: "#",
+      description: "Complete local dominance infrastructure for established leaders",
+      features: [
+        "Everything in Executive Command",
+        "SEO & local search dominance",
+        "Lead generation systems",
+        "Performance analytics",
+        "Quarterly strategic reviews",
+        "SLA guarantee",
+      ],
+      buttonText: "Request Invitation",
+      href: siteConfig.links.whatsapp,
       isPopular: false,
-      disabled: true,
+      disabled: false,
+      icon: <Building2 className="w-5 h-5" />,
     },
   ];
 
   return (
-    <Section title="Harga" subtitle="Pilih paket yang sesuai dengan kebutuhan Anda.">
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 py-12">
+    <Section 
+      title="Partnership Tiers" 
+      subtitle="Investment levels designed for serious business owners"
+    >
+      <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+        Pricing is discussed during your strategy call to ensure the right fit.
+        We believe in value-based partnerships, not one-size-fits-all packages.
+      </p>
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 py-8">
         {plans.map((plan, index) => (
           <div
             key={index}
             className={cn(
-              "flex flex-col justify-between rounded-xl border bg-background p-8 shadow-sm transition-all hover:shadow-md",
-              plan.isPopular ? "border-primary border-2 relative" : "border-border",
+              "flex flex-col justify-between rounded-2xl border bg-card p-8 transition-all hover:border-primary/50",
+              plan.isPopular ? "border-primary border-2 relative gold-glow" : "border-border/50",
               plan.disabled && "opacity-60 grayscale"
             )}
           >
             {plan.isPopular && (
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
-                Popular
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-xs font-semibold text-primary-foreground">
+                Most Popular
               </span>
             )}
             <div>
-              <h3 className="text-lg font-semibold">{plan.name}</h3>
-              <div className="mt-4 flex items-baseline text-3xl font-bold tracking-tight">
-                {plan.price}
-                <span className="text-sm font-semibold text-muted-foreground ml-1">
-                  {plan.period}
-                </span>
+              <div className="flex items-center gap-2 mb-2">
+                <div className="text-primary">{plan.icon}</div>
+                <h3 className="text-lg font-semibold font-serif">{plan.name}</h3>
               </div>
-              <p className="mt-4 text-sm text-muted-foreground">
+              <div className="mt-4 flex items-baseline text-2xl font-bold tracking-tight text-primary">
+                {plan.price}
+              </div>
+              <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
                 {plan.description}
               </p>
               {plan.features.length > 0 && (
                 <ul className="mt-8 space-y-3">
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm">
-                      <Check className="h-4 w-4 text-primary" />
+                    <li key={i} className="flex items-center gap-3 text-sm text-foreground/80">
+                      <Check className="h-4 w-4 text-primary flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
                 </ul>
               )}
             </div>
-            <Link
-              href={plan.href}
-              className={cn(
-                buttonVariants({
-                  variant: plan.isPopular ? "default" : "outline",
-                }),
-                "mt-8 w-full",
-                plan.disabled && "pointer-events-none opacity-50"
-              )}
-            >
-              {plan.buttonText}
-            </Link>
+            {plan.isPopular ? (
+              <button
+                onClick={openModal}
+                className={cn(
+                  buttonVariants({ variant: "default" }),
+                  "mt-8 w-full gold-glow",
+                  plan.disabled && "pointer-events-none opacity-50"
+                )}
+              >
+                {plan.buttonText}
+              </button>
+            ) : (
+              <Link
+                href={plan.href}
+                target="_blank"
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "mt-8 w-full border-primary/30 hover:bg-primary/10",
+                  plan.disabled && "pointer-events-none opacity-50"
+                )}
+              >
+                {plan.buttonText}
+              </Link>
+            )}
           </div>
         ))}
       </div>
+      <p className="text-center text-sm text-muted-foreground mt-4">
+        Currently accepting only <span className="text-primary font-medium">3 new partnerships</span> per month to maintain concierge quality.
+      </p>
     </Section>
   );
 }
+

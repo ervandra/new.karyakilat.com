@@ -9,30 +9,34 @@ import { siteConfig } from "@/lib/config";
 
 const faqs = [
   {
-    question: "Berapa lama proses pembuatan aset digital saya?",
-    answer: "Prosesnya sangat cepat. Maksimal 1x24 jam setelah data lengkap (foto, bio, kontak) kami terima, sistem digital Anda sudah online.",
+    question: "How long does the entire process take?",
+    answer: "From strategy call to live command center: 72 hours. We move at executive pace because we understand your time is your most valuable asset. The initial consultation is just 20 minutes.",
   },
   {
-    question: "Apa saja data yang perlu saya siapkan?",
-    answer: "Cukup siapkan: foto profil berkualitas, deskripsi singkat (bio), daftar layanan/produk, link media sosial, dan nomor WhatsApp untuk tombol CTA.",
+    question: "Do you have a portfolio I can see?",
+    answer: "We're currently in our Founding Partner phase (Q1 2026), working with select BSD & Gading Serpong business owners. As a founding partner, you receive significant value in exchange for testimonials and case study participation. Contact us for work-in-progress previews.",
   },
   {
-    question: "Apakah ada biaya berlangganan bulanan?",
-    answer: "TIDAK. Paket Basic adalah pembayaran sekali untuk selamanya (Lifetime). Aset digital Anda akan terus online tanpa biaya bulanan.",
+    question: "What's included in the 'white-glove' service?",
+    answer: "Everything technical. We handle domain registration, hosting setup, SSL certificates, design, copywriting support, and ongoing maintenance. You never see a dashboard or deal with any technical decisions. Your only job is to approve the final look.",
   },
   {
-    question: "Bisa revisi kalau ada yang kurang pas?",
-    answer: "Tentu! Revisi minor hingga 2x gratis setelah jadi, untuk memastikan hasilnya sesuai dengan identitas profesional Anda.",
+    question: "Why don't you show prices publicly?",
+    answer: "Because cookie-cutter pricing creates cookie-cutter results. Every business has unique positioning needs. We discuss investment during your strategy call to ensure we recommend the right tier for your specific situation and goals.",
   },
   {
-    question: "Apa bedanya dengan Linktree atau link bio gratis?",
-    answer: "Perbedaan utamanya adalah kepemilikan dan profesionalisme. Karya Kilat membangun aset digital yang Anda miliki, bukan sekadar profil di platform orang lain. Desain premium, custom, dan tidak ada branding pihak ketiga.",
+    question: "What makes this different from hiring an agency?",
+    answer: "Agencies require weeks of meetings, endless revisions, and six-figure budgets. We deliver in 72 hours with a single point of contact (Van, the founder) who becomes your ongoing tech partner. Personal attention agencies simply cannot match.",
+  },
+  {
+    question: "What happens after launch?",
+    answer: "You become a priority support client. Need a tweak? One WhatsApp message. Content update? We handle it. You're not buying a website—you're gaining a tech partner on speed-dial.",
   },
 ];
 
 export default function FAQ() {
   return (
-    <Section title="FAQ" subtitle="Pertanyaan yang Sering Diajukan">
+    <Section title="Common Questions" subtitle="Answers for discerning business owners">
       <div className="mx-auto my-12 md:max-w-[800px]">
         <Accordion
           type="single"
@@ -43,22 +47,25 @@ export default function FAQ() {
             <AccordionItem
               key={idx}
               value={faq.question}
-              className="w-full border rounded-lg overflow-hidden"
+              className="w-full border border-border/50 rounded-lg overflow-hidden hover:border-primary/30 transition-colors"
             >
-              <AccordionTrigger className="px-4 text-left">
+              <AccordionTrigger className="px-4 text-left font-medium">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="px-4">{faq.answer}</AccordionContent>
+              <AccordionContent className="px-4 text-muted-foreground leading-relaxed">
+                {faq.answer}
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
       </div>
       <h4 className="mb-12 text-center text-sm font-medium tracking-tight text-foreground/80">
-        Masih punya pertanyaan? Hubungi kami di{" "}
-        <a href="https://wa.me/6281234567890" target="_blank" className="underline">
-          WhatsApp
+        Have other questions?{" "}
+        <a href={siteConfig.links.whatsapp} target="_blank" className="text-primary hover:underline">
+          Let&apos;s talk on WhatsApp
         </a>
       </h4>
     </Section>
   );
 }
+

@@ -1,49 +1,45 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import Section from "@/components/section";
 import { Card, CardContent } from "@/components/ui/card";
-import { FileWarning, Link, Wallet } from "lucide-react";
+import { Globe, Clock, Users } from "lucide-react";
 
 const problems = [
   {
-    title: "Kartu Nama = Jalan Buntu",
+    title: "The Fragmented Presence",
     description:
-      "80% kartu nama fisik tidak pernah ditindaklanjuti. Klien kehilangan kartu Anda, dan Anda kehilangan peluang bisnis.",
-    footnote: "(Sumber: Survei Internal, 2025)",
-    icon: FileWarning,
+      "Your business is multi-billion rupiah. But online, your 'front door' is scattered across messy social links and outdated pages. First impressions cost you premium clients daily.",
+    icon: Globe,
   },
   {
-    title: "Link Bio = Terlihat Gratisan",
+    title: "The Agency Paradox",
     description:
-      "Tampilan Linktree polos tidak menunjukkan otoritas. Di mata klien, Anda terlihat sama saja dengan jutaan pengguna lain.",
-    icon: Link,
+      "Agencies take weeks and charge millions. DIY builders look cheap and generic. Neither understands that your time is worth more than endless meetings and revisions.",
+    icon: Clock,
   },
   {
-    title: "Website Custom = Mahal & Lama",
+    title: "The Trust Deficit",
     description:
-      "Agensi web menagih jutaan rupiah dan butuh waktu berminggu-minggu. Profesional sibuk tidak punya waktu untuk itu.",
-    icon: Wallet,
+      "When partners Google you, what do they find? A 'Linktree' profile signals 'side hustle'—not the established market leader you actually are.",
+    icon: Users,
   },
 ];
 
 export default function Component() {
   return (
     <Section
-      title="Masalah Utama"
-      subtitle="Kenapa profesional kehilangan kredibilitas di era digital?"
+      title="The Reputation Gap"
+      subtitle="Why established business owners lose credibility in the digital space"
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         {problems.map((problem, index) => (
           <BlurFade key={index} delay={0.2 + index * 0.2} inView>
-            <Card className="bg-background border-none shadow-none">
+            <Card className="bg-card border-border/50 shadow-none hover:border-primary/30 transition-colors">
               <CardContent className="p-6 space-y-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <problem.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold">{problem.title}</h3>
-                <p className="text-muted-foreground">{problem.description}</p>
-                {"footnote" in problem && problem.footnote && (
-                  <p className="text-xs text-muted-foreground/70 italic">{problem.footnote}</p>
-                )}
+                <h3 className="text-xl font-semibold font-serif">{problem.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{problem.description}</p>
               </CardContent>
             </Card>
           </BlurFade>
@@ -52,3 +48,4 @@ export default function Component() {
     </Section>
   );
 }
+
