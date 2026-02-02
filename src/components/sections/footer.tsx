@@ -19,16 +19,16 @@ export default function Footer() {
 
           {/* Personal Branding - Ervandra Halim */}
           <div className="md:text-right">
-            <p className="font-bold text-foreground text-lg font-serif">Ervandra Halim</p>
+            <p className="font-bold text-foreground text-lg font-serif">by Ervandra Halim</p>
             <p className="text-sm text-primary mt-1">
-              15 Tahun Experience | Ex-R/GA, LifeLearn, Syntax Solution
+              Your Tech Partner
             </p>
-            <p className="text-sm text-muted-foreground mt-2 italic">
-              "Bisnis + Teknologi = Growth + Leverage = Cuan"
+            {/* <p className="text-sm text-muted-foreground mt-2 italic">
+              "Bisnis + Teknologi = Growth + Leverage = More Revenue"
             </p>
             <p className="text-xs text-muted-foreground mt-2">
               Honesty &bull; Excellence &bull; Integrity
-            </p>
+            </p> */}
             <div className="flex gap-4 mt-3 md:justify-end">
               <Link 
                 href="https://linkedin.com/in/ervandra" 
@@ -39,7 +39,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link 
-                href="https://instagram.com/ervandra" 
+                href="https://instagram.com/karyakilat" 
                 target="_blank"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Instagram"

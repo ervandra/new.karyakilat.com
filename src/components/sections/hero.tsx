@@ -126,7 +126,7 @@ function HeroImage() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.2, duration: 1, ease }}
     >
-      <div className="relative aspect-video w-full max-w-screen-lg mt-16 bg-gradient-to-br from-primary/20 via-primary/5 to-transparent rounded-2xl flex items-center justify-center border border-primary/20 overflow-hidden">
+      <div className="relative aspect-video w-full max-w-screen-lg mt-16 rounded-2xl border border-primary/20 overflow-hidden">
         <BorderBeam 
           size={400}
           duration={10}
@@ -134,11 +134,11 @@ function HeroImage() {
           colorTo="#ffd700"
           borderWidth={2}
         />
-        <div className="text-center text-foreground/80">
-          <Icons.logo className="w-16 h-16 mx-auto mb-4 text-primary opacity-60" />
-          <p className="text-lg font-serif font-medium">Digital Headquarters Preview</p>
-          <p className="text-sm opacity-60 mt-1">Bespoke designs for select clients</p>
-        </div>
+        <img 
+          src="/images/digital-command-center.jpg" 
+          alt="Digital Command Center - Your Premium Digital Headquarters"
+          className="w-full h-full object-cover"
+        />
       </div>
     </motion.div>
   );

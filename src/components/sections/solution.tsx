@@ -2,7 +2,6 @@
 
 import FlickeringGrid from "@/components/magicui/flickering-grid";
 import Ripple from "@/components/magicui/ripple";
-import Safari from "@/components/safari";
 import Section from "@/components/section";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -15,10 +14,10 @@ const features = [
     className: "hover:bg-primary/5 transition-all duration-500 ease-out",
     content: (
       <>
-        <Safari
-          src={`/dashboard.png`}
-          url="karyakilat.com/executive"
-          className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-y-[-10px] transition-all duration-300"
+        <img
+          src="/images/bespoke-design.jpg"
+          alt="Bespoke Luxury Design"
+          className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-y-[-10px] transition-all duration-300 rounded-xl object-cover"
         />
       </>
     ),
@@ -30,10 +29,10 @@ const features = [
     className:
       "order-3 xl:order-none hover:bg-primary/5 transition-all duration-500 ease-out",
     content: (
-      <Safari
-        src={`/dashboard.png`}
-        url="karyakilat.com/executive"
-        className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-y-[-10px] transition-all duration-300"
+      <img
+        src="/images/zero-tech-delivery.jpg"
+        alt="Zero-Tech Delivery"
+        className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-y-[-10px] transition-all duration-300 rounded-xl object-cover"
       />
     ),
   },
@@ -55,10 +54,10 @@ const features = [
           height={800}
           width={800}
         />
-        <Safari
-          src={`/dashboard.png`}
-          url="karyakilat.com/executive"
-          className="-mb-48 ml-12 mt-16 h-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-x-[-10px] transition-all duration-300"
+        <img
+          src="/images/whatsapp-priority-core.jpg"
+          alt="WhatsApp Priority Core"
+          className="-mb-48 ml-12 mt-16 h-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-x-[-10px] transition-all duration-300 rounded-xl object-cover"
         />
       </>
     ),
@@ -72,10 +71,10 @@ const features = [
     content: (
       <>
         <Ripple className="absolute -bottom-full" />
-        <Safari
-          src={`/dashboard.png`}
-          url="karyakilat.com/executive"
-          className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-y-[-10px] transition-all duration-300"
+        <img
+          src="/images/14-days.jpg"
+          alt="14 Hari Selesai"
+          className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-y-[-10px] transition-all duration-300 rounded-xl object-cover"
         />
       </>
     ),

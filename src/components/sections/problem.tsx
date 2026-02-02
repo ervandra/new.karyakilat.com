@@ -30,6 +30,13 @@ export default function Component() {
       title="The Reputation Gap"
       subtitle="Why established business owners lose credibility in the digital space"
     >
+      <div className="relative mx-auto w-full max-w-4xl mt-8 mb-8 rounded-2xl overflow-hidden border border-primary/20">
+        <img 
+          src="/images/chaos-vs-structure.jpg" 
+          alt="Chaos vs Structure - The Reputation Gap"
+          className="w-full h-auto object-cover"
+        />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         {problems.map((problem, index) => (
           <BlurFade key={index} delay={0.2 + index * 0.2} inView>
