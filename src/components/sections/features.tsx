@@ -1,6 +1,6 @@
 import Section from "@/components/section";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-import { Globe, Mail, Store, User } from "lucide-react";
+import { Globe, ClipboardList, Store, User } from "lucide-react";
 
 const features = [
   {
@@ -31,11 +31,11 @@ const features = [
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
-    Icon: Mail,
-    name: "Invitation Engine",
-    description: "Sistem undangan digital yang elegan, hemat biaya, dan viral-ready (WhatsApp optimized).",
+    Icon: ClipboardList,
+    name: "WA Lead & Mini-CRM",
+    description: "Sistem lead capture terintegrasi: Form → Google Spreadsheet → WhatsApp Link. Kelola prospek dengan mudah.",
     href: "#",
-    cta: "Lihat Contoh",
+    cta: "Lihat Demo",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },

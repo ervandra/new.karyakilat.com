@@ -3,21 +3,20 @@
 import Section from "@/components/section";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Check, Crown, Building2, Globe } from "lucide-react";
+import { Check, Crown, Building2, Globe, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/config";
 import { useLeadCapture } from "@/components/lead-capture-context";
-import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function Pricing() {
   const { openModal } = useLeadCapture();
 
   const plans = [
     {
-      name: "Professional Launchpad",
-      price: "Available on Request",
-      period: "",
-      description: "One-page authority hub for executives who need immediate credibility",
+      name: "Professional",
+      price: "Rp 4.950.000",
+      period: "(Start From)",
+      description: "Single Page Authority Hub. 25+ Deliverables.",
       features: [
         "Bespoke single-page design",
         "Custom domain setup",
@@ -25,6 +24,7 @@ export default function Pricing() {
         "Mobile-first optimization",
         "30-day priority support",
         "Training walkthrough",
+        "SEO basics included",
       ],
       buttonText: "Request Details",
       href: siteConfig.links.whatsapp,
@@ -33,18 +33,19 @@ export default function Pricing() {
       icon: <Globe className="w-5 h-5" />,
     },
     {
-      name: "Executive Command",
-      price: "Bespoke Strategy",
-      period: "",
-      description: "Full digital headquarters with ongoing concierge management",
+      name: "Executive",
+      price: "Rp 11.960.000",
+      period: "(Beta)",
+      description: "Multi-page Command Center. 40+ Deliverables. 60-Day Support.",
       features: [
         "Multi-page command center",
         "Brand strategy session",
         "Professional copywriting",
         "Advanced integrations (CRM, booking)",
-        "6-month concierge support",
+        "60-day concierge support",
         "Monthly content updates",
         "Dedicated account manager",
+        "SEO 20-point checklist",
       ],
       buttonText: "Book Consultation",
       href: "#",
@@ -53,17 +54,18 @@ export default function Pricing() {
       icon: <Crown className="w-5 h-5" />,
     },
     {
-      name: "Market Authority",
-      price: "Invitation Only",
-      period: "",
-      description: "Complete local dominance infrastructure for established leaders",
+      name: "Authority",
+      price: "Rp 24.970.000",
+      period: "(Beta)",
+      description: "Complete Digital Ecosystem. Quarterly Strategy Reviews.",
       features: [
-        "Everything in Executive Command",
+        "Everything in Executive",
         "SEO & local search dominance",
         "Lead generation systems",
         "Performance analytics",
         "Quarterly strategic reviews",
         "SLA guarantee",
+        "Priority WhatsApp support",
       ],
       buttonText: "Request Invitation",
       href: siteConfig.links.whatsapp,
@@ -78,9 +80,18 @@ export default function Pricing() {
       title="Partnership Tiers" 
       subtitle="Investment levels designed for serious business owners"
     >
+      {/* Founding Client Badge */}
+      <div className="flex justify-center mb-8">
+        <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-6 py-3">
+          <Sparkles className="w-5 h-5 text-primary" />
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">
+            Founding Client Program (Feb-Mar 2026)
+          </span>
+        </div>
+      </div>
+
       <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-        Pricing is discussed during your strategy call to ensure the right fit.
-        We believe in value-based partnerships, not one-size-fits-all packages.
+        Beta pricing untuk founding clients. Harga akan naik setelah program berakhir.
       </p>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 py-8">
         {plans.map((plan, index) => (
@@ -94,7 +105,7 @@ export default function Pricing() {
           >
             {plan.isPopular && (
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-xs font-semibold text-primary-foreground">
-                Most Popular
+                Recommended
               </span>
             )}
             <div>
@@ -102,8 +113,11 @@ export default function Pricing() {
                 <div className="text-primary">{plan.icon}</div>
                 <h3 className="text-lg font-semibold font-serif">{plan.name}</h3>
               </div>
-              <div className="mt-4 flex items-baseline text-2xl font-bold tracking-tight text-primary">
-                {plan.price}
+              <div className="mt-4 flex items-baseline gap-2">
+                <span className="text-2xl font-bold tracking-tight text-primary">
+                  {plan.price}
+                </span>
+                <span className="text-sm text-muted-foreground">{plan.period}</span>
               </div>
               <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
                 {plan.description}
@@ -147,9 +161,8 @@ export default function Pricing() {
         ))}
       </div>
       <p className="text-center text-sm text-muted-foreground mt-4">
-        Currently accepting only <span className="text-primary font-medium">3 new partnerships</span> per month to maintain concierge quality.
+        Currently accepting only <span className="text-primary font-medium">5 clients per quarter</span> to maintain concierge quality.
       </p>
     </Section>
   );
 }
-

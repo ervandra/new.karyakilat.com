@@ -9,6 +9,8 @@ import Problem from "@/components/sections/problem";
 import Solution from "@/components/sections/solution";
 import TestimonialsCarousel from "@/components/sections/testimonials-carousel";
 import Pricing from "@/components/sections/pricing";
+import Blueprint from "@/components/sections/blueprint";
+import Comparison from "@/components/sections/comparison";
 
 export default function Home() {
   return (
@@ -18,12 +20,12 @@ export default function Home() {
       <Problem />
       <Solution />
       <HowItWorks />
-      <Features /> {/* Services */}
+      <Blueprint />
+      <Features />
       <TestimonialsCarousel />
-      {/* <Testimonials /> */}
       <Pricing />
+      <Comparison />
       <FAQ />
-      {/* <Blog /> */}
       <CTA />
       <Footer />
     </main>

@@ -57,6 +57,18 @@ function HeroTitles() {
         White-glove digital infrastructure untuk CEO & komunitas eksklusif mereka.
         Zero hassle. Maximum authority.
       </motion.p>
+      <motion.p
+        className="mx-auto max-w-2xl text-center text-sm sm:text-base leading-relaxed text-primary font-medium mt-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.8,
+          duration: 0.8,
+          ease,
+        }}
+      >
+        Website Premium Done-for-You dalam 14 Hari — Anda Fokus Bisnis, Kami Urus Sisanya.
+      </motion.p>
     </div>
   );
 }
