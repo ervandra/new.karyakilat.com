@@ -28,7 +28,7 @@ export default function CtaSection() {
           )}
         >
           <Icons.logo className="h-5 w-5" />
-          Request Private Invitation
+          Mulai Konsultasi
         </button>
         <Link
           href={siteConfig.links.whatsapp}
@@ -39,11 +39,11 @@ export default function CtaSection() {
           )}
         >
           <Calendar className="h-5 w-5" />
-          Book Strategy Call
+          Jadwalkan Konsultasi
         </Link>
       </div>
       <p className="text-center text-sm text-muted-foreground mt-6">
-        Limited to <span className="text-primary font-medium">3 partnerships</span> per month
+        <span className="text-primary font-medium">Slot tersedia</span> bulan ini
       </p>
     </Section>
   );

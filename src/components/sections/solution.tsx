@@ -64,9 +64,9 @@ const features = [
     ),
   },
   {
-    title: "72-Hour Launch",
+    title: "14 Hari Selesai",
     description:
-      "From strategy call to live command center in 72 hours. We move at executive pace because your time is your most valuable asset.",
+      "From strategy call to live command center dalam 14 hari. Beberapa klien sudah live dalam 72 jam. We move at executive pace because your time is your most valuable asset.",
     className:
       "flex-row order-4 md:col-span-2 md:flex-row xl:order-none hover:bg-primary/5 transition-all duration-500 ease-out",
     content: (

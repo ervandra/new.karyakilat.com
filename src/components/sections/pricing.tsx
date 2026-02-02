@@ -161,7 +161,7 @@ export default function Pricing() {
         ))}
       </div>
       <p className="text-center text-sm text-muted-foreground mt-4">
-        Currently accepting only <span className="text-primary font-medium">5 clients per quarter</span> to maintain concierge quality.
+        <span className="text-primary font-medium">Slot tersedia</span> bulan ini untuk menjaga kualitas concierge.
       </p>
     </Section>
   );

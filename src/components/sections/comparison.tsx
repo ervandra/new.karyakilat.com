@@ -33,7 +33,7 @@ const comparisons = [
   {
     aspect: "Attention",
     template: "1 of 12,000 Clients",
-    premium: "1 of 5 Clients per Quarter",
+    premium: "1 of 3 Clients per Month",
   },
 ];
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -28,6 +29,24 @@ export default function Footer() {
             <p className="text-xs text-muted-foreground mt-2">
               Honesty &bull; Excellence &bull; Integrity
             </p>
+            <div className="flex gap-4 mt-3 md:justify-end">
+              <Link 
+                href="https://linkedin.com/in/ervandra" 
+                target="_blank"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </Link>
+              <Link 
+                href="https://instagram.com/ervandra" 
+                target="_blank"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </div>
 

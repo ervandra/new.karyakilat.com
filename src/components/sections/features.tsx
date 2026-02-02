@@ -52,7 +52,7 @@ const features = [
 
 export default function Component() {
   return (
-    <Section title="Sistem, Bukan Sekadar Web" subtitle="Infrastruktur digital lengkap untuk pertumbuhan karier Anda.">
+    <Section title="Sistem, Bukan Sekadar Web" subtitle="Infrastruktur digital lengkap untuk bisnis, agen, dan profesional.">
       <BentoGrid className="lg:grid-rows-3">
         {features.map((feature) => (
           <BentoCard key={feature.name} {...feature} />

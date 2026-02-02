@@ -9,8 +9,8 @@ import { siteConfig } from "@/lib/config";
 
 const faqs = [
   {
-    question: "How long does the entire process take?",
-    answer: "From strategy call to live command center: 72 hours. We move at executive pace because we understand your time is your most valuable asset. The initial consultation is just 20 minutes.",
+    question: "Berapa lama prosesnya?",
+    answer: "Dari konsultasi hingga website live: 14 hari. Beberapa klien bahkan sudah online dalam 72 jam. Kami bergerak cepat karena kami paham waktu Anda sangat berharga. Konsultasi awal hanya 20 menit.",
   },
   {
     question: "Do you have a portfolio I can see?",
@@ -21,12 +21,12 @@ const faqs = [
     answer: "Everything technical. We handle domain registration, hosting setup, SSL certificates, design, copywriting support, and ongoing maintenance. You never see a dashboard or deal with any technical decisions. Your only job is to approve the final look.",
   },
   {
-    question: "Why don't you show prices publicly?",
-    answer: "Because cookie-cutter pricing creates cookie-cutter results. Every business has unique positioning needs. We discuss investment during your strategy call to ensure we recommend the right tier for your specific situation and goals.",
+    question: "Apa bedanya dengan pakai template?",
+    answer: "Template = Anda salah satu dari 12,000+ pengguna. Karya Kilat = Anda 1 dari 3 klien per bulan. Kami handle everything: design custom, domain, hosting, security, copywriting support, dan maintenance. Anda hanya perlu approve desain final.",
   },
   {
-    question: "What makes this different from hiring an agency?",
-    answer: "Agencies require weeks of meetings, endless revisions, and six-figure budgets. We deliver in 72 hours with a single point of contact (Van, the founder) who becomes your ongoing tech partner. Personal attention agencies simply cannot match.",
+    question: "Apa bedanya dengan agency biasa?",
+    answer: "Agency butuh minggu-an meeting dan revisi tanpa akhir. Kami deliver dalam 14 hari dengan satu kontak langsung (Ervandra) yang menjadi tech partner Anda. Personal attention yang agency tidak bisa berikan.",
   },
   {
     question: "What happens after launch?",

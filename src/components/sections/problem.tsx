@@ -7,7 +7,7 @@ const problems = [
   {
     title: "The Fragmented Presence",
     description:
-      "Your business is multi-billion rupiah. But online, your 'front door' is scattered across messy social links and outdated pages. First impressions cost you premium clients daily.",
+      "Your business is established. But online, your 'front door' is scattered across messy social links and outdated pages. First impressions cost you premium clients daily.",
     icon: Globe,
   },
   {

@@ -92,7 +92,7 @@ function HeroCTA() {
           )}
         >
           <Icons.logo className="h-5 w-5" />
-          Request Private Invitation
+          Mulai Konsultasi
         </button>
         <Link
           href={siteConfig.links.whatsapp}
@@ -103,7 +103,7 @@ function HeroCTA() {
           )}
         >
           <Calendar className="h-5 w-5" />
-          Book Strategy Call
+          Jadwalkan Konsultasi
         </Link>
       </motion.div>
       <motion.p
@@ -112,7 +112,7 @@ function HeroCTA() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.0, duration: 0.8 }}
       >
-        Currently accepting only <span className="text-primary font-medium">3 new partnerships</span> this month.
+        <span className="text-primary font-medium">Slot tersedia</span> bulan ini.
       </motion.p>
     </>
   );
