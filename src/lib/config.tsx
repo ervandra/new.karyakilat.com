@@ -57,31 +57,11 @@ export const siteConfig = {
     github: "https://github.com/karyakilat",
     instagram: "https://instagram.com/karyakilat",
     whatsapp: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20Digital%20Headquarters",
+    whatsappProfessional: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20PROFESSIONAL%20(Rp%204.95jt)%20Digital%20Headquarters.%20Bisnis%20saya%3A%20",
+    whatsappExecutive: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20EXECUTIVE%20(Rp%2011.96jt)%20Digital%20Headquarters.%20Saya%20butuh%20multi-page%20%2B%20CRM%20integration.",
+    whatsappAuthority: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20AUTHORITY%20(Rp%2024.97jt)%20Digital%20Headquarters.%20Saya%20cari%20partner%20digital%20jangka%20panjang%20dengan%20SLA.",
   },
   header: [
-    {
-      trigger: "Services",
-      content: {
-        main: {
-          icon: <Icons.logo className="h-6 w-6" />,
-          title: "Digital Headquarters",
-          description: "Bespoke digital infrastructure untuk executive & business owner.",
-          href: "#features",
-        },
-        items: [
-          {
-            href: "#features",
-            title: "Executive Presence",
-            description: "Personal authority hub untuk CEO & founders.",
-          },
-          {
-            href: "#features",
-            title: "Command Center",
-            description: "Full digital ecosystem untuk bisnis premium.",
-          },
-        ],
-      },
-    },
     {
       href: "#how-it-works",
       label: "Process",

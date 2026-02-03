@@ -32,6 +32,7 @@ const data = [
 export default function Component() {
   return (
     <Section 
+      id="how-it-works"
       title="The Concierge Journey" 
       subtitle="Total Time Investment: 20 Minutes"
     >

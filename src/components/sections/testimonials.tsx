@@ -270,6 +270,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <Section
+      id="testimonials"
       title="Testimonials"
       subtitle="What our customers are saying"
       className="max-w-8xl"

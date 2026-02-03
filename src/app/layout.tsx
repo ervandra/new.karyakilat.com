@@ -4,6 +4,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { StructuredData } from "@/components/structured-data";
 import { LeadCaptureProvider } from "@/components/lead-capture-context";
 import LeadCaptureModal from "@/components/lead-capture-modal";
+import StickyCTA from "@/components/sticky-cta";
 import { cn, constructMetadata } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import { Fira_Sans, Merriweather } from "next/font/google";
@@ -56,6 +57,7 @@ export default function RootLayout({
           <LeadCaptureProvider>
             {children}
             <LeadCaptureModal />
+            <StickyCTA />
           </LeadCaptureProvider>
           <ThemeToggle />
           <TailwindIndicator />

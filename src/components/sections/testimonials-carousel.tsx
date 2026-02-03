@@ -39,6 +39,7 @@ const testimonials = [
 export default function Component() {
   return (
     <Section
+      id="testimonials"
       title="Client Voices"
       subtitle="What BSD & Gading Serpong leaders say about their Digital Headquarters"
     >

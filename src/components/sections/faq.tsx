@@ -36,7 +36,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <Section title="Common Questions" subtitle="Answers for discerning business owners">
+    <Section id="faq" title="Common Questions" subtitle="Answers for discerning business owners">
       <div className="mx-auto my-12 md:max-w-[800px]">
         <Accordion
           type="single"

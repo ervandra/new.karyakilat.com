@@ -118,42 +118,36 @@ function HeroCTA() {
   );
 }
 
-function HeroImage() {
+export default function Hero2() {
   return (
-    <motion.div
-      className="relative mx-auto flex w-full items-center justify-center"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1.2, duration: 1, ease }}
-    >
-      <div className="relative aspect-video w-full max-w-screen-lg mt-16 rounded-2xl border border-primary/20 overflow-hidden">
-        <BorderBeam 
-          size={400}
-          duration={10}
-          colorFrom="#d4af37"
-          colorTo="#ffd700"
-          borderWidth={2}
-        />
+    <section id="hero" className="relative min-h-[70vh] overflow-hidden">
+      {/* Background Image */}
+      <motion.div
+        className="absolute inset-0 z-0"
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5, ease }}
+      >
         <img 
           src="/images/digital-command-center.jpg" 
           alt="Digital Command Center - Your Premium Digital Headquarters"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-10"
         />
-      </div>
-    </motion.div>
-  );
-}
-
-export default function Hero2() {
-  return (
-    <section id="hero">
-      <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 sm:px-6 sm:pt-24 md:pt-32 lg:px-8">
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
+        {/* Gold accent overlay */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-primary/10" />
+      </motion.div>
+      
+      {/* Content */}
+      <div className="relative z-10 flex min-h-[70vh] w-full flex-col items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
         <HeroPill />
         <HeroTitles />
         <HeroCTA />
-        <HeroImage />
-        <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div>
       </div>
+      
+      {/* Bottom fade */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 }
