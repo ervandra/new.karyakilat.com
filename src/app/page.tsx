@@ -12,6 +12,7 @@ import Pricing from "@/components/sections/pricing";
 import Blueprint from "@/components/sections/blueprint";
 import Comparison from "@/components/sections/comparison";
 import Portfolio from "@/components/sections/portfolio";
+import CustomBanner from "@/components/sections/custom-banner";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Portfolio />
       <TestimonialsCarousel />
       <Pricing />
+      <CustomBanner />
       <Comparison />
       <FAQ />
       <CTA />

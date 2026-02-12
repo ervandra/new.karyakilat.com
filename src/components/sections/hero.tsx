@@ -23,7 +23,7 @@ function HeroPill() {
     >
       <Shield className="w-4 h-4 text-primary" />
       <p className="text-xs font-medium text-primary sm:text-sm tracking-wide">
-        Executive Concierge Service
+        Your Business Deserves More Than a Linktree
       </p>
     </motion.div>
   );

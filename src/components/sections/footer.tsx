@@ -20,8 +20,9 @@ export default function Footer() {
           {/* Personal Branding - Ervandra Halim */}
           <div className="md:text-right">
             <p className="font-bold text-foreground text-lg font-serif">by Ervandra Halim</p>
+            <p><a href="https://www.ervandra.dev/" target="_blank" rel="noopener noreferrer">www.ervandra.dev</a></p>
             <p className="text-sm text-primary mt-1">
-              Your Tech Partner
+              Your Tech Partner & Solution Architect
             </p>
             {/* <p className="text-sm text-muted-foreground mt-2 italic">
               "Bisnis + Teknologi = Growth + Leverage = More Revenue"
