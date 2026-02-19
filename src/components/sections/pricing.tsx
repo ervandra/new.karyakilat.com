@@ -11,17 +11,18 @@ export default function Pricing() {
   const plans = [
     {
       name: "Signature",
-      price: "Rp 4.950.000",
-      period: "(Founding Rate)",
-      description: "Single-page Digital HQ. Tampil profesional, generate leads via WhatsApp.",
+      price: "Rp 9,750,000",
+      regularPrice: "Rp 15,000,000",
+      period: "Founding Rate",
+      description: "Your professional digital front door. One powerful page — built to convert the moment someone Googles you.",
       features: [
-        "Bespoke single-page design",
-        "Custom domain setup",
-        "WhatsApp integration",
-        "Mobile-first optimization",
-        "30-day priority support",
-        "Training walkthrough",
-        "SEO basics included",
+        "Long-form single-page design (Hero, Services, Testimonials, CTA)",
+        "Custom domain & hosting configuration",
+        "WhatsApp click-to-chat with pre-filled lead message",
+        "Mobile-first, tested across devices",
+        "Basic on-page SEO (meta tags, sitemap, GSC submission)",
+        "30-day post-launch support via WhatsApp",
+        "Handover walkthrough — Zoom or recorded Loom",
       ],
       buttonText: "Apply for Invitation",
       href: siteConfig.links.whatsappSignature,
@@ -31,18 +32,19 @@ export default function Pricing() {
     },
     {
       name: "Sovereign",
-      price: "Rp 11.960.000",
-      period: "(Founding Rate)",
-      description: "Multi-page Command Center. Brand strategy, copywriting, CRM — semua terkelola.",
+      price: "Rp 22,500,000",
+      regularPrice: "Rp 35,000,000",
+      period: "Founding Rate",
+      description: "Your full multi-page digital presence — built with strategy, written for you, and managed so you never have to touch it.",
       features: [
-        "Multi-page command center",
-        "Brand strategy session",
-        "Professional copywriting",
-        "Advanced integrations (CRM, booking)",
-        "60-day concierge support",
-        "Monthly content updates",
-        "Dedicated account manager",
-        "SEO 20-point checklist",
+        "4–6 custom pages (Home, About, Services, Portfolio, Contact)",
+        "60-min brand strategy session — we extract your story",
+        "Professional copywriting — we write all page content for you",
+        "Tool integration: we connect your existing booking/CRM (Calendly, HubSpot, etc.) — platform costs are yours",
+        "Content update support — send us changes, live in 3 business days (up to 2×/month)",
+        "Dedicated point of contact — one person who knows your business",
+        "60-day concierge support via WhatsApp",
+        "SEO 20-point checklist (on-page + technical)",
       ],
       buttonText: "Apply for Invitation",
       href: siteConfig.links.whatsappSovereign,
@@ -52,19 +54,20 @@ export default function Pricing() {
     },
     {
       name: "Authority",
-      price: "Rp 24.970.000",
-      period: "(Founding Rate)",
-      description: "Ekosistem Digital lengkap. SEO dominance, lead systems, dan quarterly strategy review.",
+      price: "Rp 45,000,000",
+      regularPrice: "Rp 65,000,000",
+      period: "Founding Rate",
+      description: "A long-term digital partnership. We become part of your growth strategy — not just your vendor.",
       features: [
         "Everything in Sovereign",
-        "SEO & local search dominance",
-        "Lead generation systems",
-        "Performance analytics",
-        "Quarterly strategic reviews",
-        "SLA guarantee",
-        "Priority WhatsApp support",
+        "Local SEO strategy: Google Business Profile, local keywords, GSC monitoring",
+        "Dedicated lead capture pages for campaigns — with WA notification integration",
+        "Monthly analytics report: traffic, lead sources, top pages (GA4 + GSC)",
+        "4× annual strategy sessions: we review performance and plan your next quarter",
+        "Written SLA: critical issues fixed in 24h, updates within 3 business days",
+        "Priority direct WhatsApp line — fastest response across all tiers",
       ],
-      buttonText: "Request Invitation",
+      buttonText: "Apply for Invitation",
       href: siteConfig.links.whatsappAuthority,
       isPopular: false,
       disabled: false,
@@ -73,22 +76,23 @@ export default function Pricing() {
   ];
 
   return (
-    <Section 
-      title="Choose Your Partnership" 
-      subtitle="Three levels of Digital Business Management — built for serious business owners in BSD & Gading Serpong"
+    <Section
+      title="Invest in Your Digital Authority"
+      subtitle="Three levels of Digital Business Management — each engineered for business leaders in BSD & Gading Serpong"
     >
-      {/* Founding Client Badge */}
+      {/* Founding Partner Badge */}
       <div className="flex justify-center mb-8">
         <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-6 py-3">
           <Sparkles className="w-5 h-5 text-primary" />
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            Founding Client Program (Feb-Mar 2026)
+            Founding Partner Program — Feb–Apr 2026 Only
           </span>
         </div>
       </div>
 
       <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-        Beta pricing untuk founding clients. Harga akan naik setelah program berakhir.
+        Founding rates are the only rates we&apos;ll ever offer at this level.
+        After the program closes, prices increase permanently. Lock yours in now.
       </p>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 py-8">
         {plans.map((plan, index) => (
@@ -116,6 +120,9 @@ export default function Pricing() {
                 </span>
                 <span className="text-sm text-muted-foreground">{plan.period}</span>
               </div>
+              <p className="text-xs text-muted-foreground mt-1 line-through opacity-60">
+                Regular: {plan.regularPrice}
+              </p>
               <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
                 {plan.description}
               </p>
@@ -146,7 +153,8 @@ export default function Pricing() {
         ))}
       </div>
       <p className="text-center text-sm text-muted-foreground mt-4">
-        <span className="text-primary font-medium">Slot tersedia</span> bulan ini untuk menjaga kualitas concierge.
+        Founding rates guaranteed until program closes in April 2026.
+        After that, prices increase permanently. No exceptions.
       </p>
     </Section>
   );
