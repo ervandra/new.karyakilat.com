@@ -176,7 +176,7 @@ export default function PropertyAgentDemo() {
               specs: "4 KT | 4 KM | LT 240m²",
               tag: "DIJUAL",
               loc: "BSD City, Tangerang Selatan",
-              img: "https://images.unsplash.com/photo-1600596542815-e328701102b9?auto=format&fit=crop&q=80&w=800"
+              img: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=800"
             },
             {
               title: "Cluster Foresta Modern",

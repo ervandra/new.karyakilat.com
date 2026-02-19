@@ -49,23 +49,23 @@ export default function LeadCaptureModal() {
     const newErrors: FormErrors = {};
 
     if (!formData.nama.trim()) {
-      newErrors.nama = "Nama wajib diisi";
+      newErrors.nama = "Name is required";
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = "Email wajib diisi";
+      newErrors.email = "Email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Format email tidak valid";
+      newErrors.email = "Invalid email format";
     }
 
     if (!formData.whatsapp.trim()) {
-      newErrors.whatsapp = "Nomor WhatsApp wajib diisi";
+      newErrors.whatsapp = "WhatsApp number is required";
     } else if (!/^[0-9+\-\s]+$/.test(formData.whatsapp)) {
-      newErrors.whatsapp = "Format nomor tidak valid";
+      newErrors.whatsapp = "Invalid number format";
     }
 
     if (!formData.jenisUsaha.trim()) {
-      newErrors.jenisUsaha = "Jenis pekerjaan/usaha wajib diisi";
+      newErrors.jenisUsaha = "Profession / business type is required";
     }
 
     setErrors(newErrors);
@@ -122,19 +122,19 @@ export default function LeadCaptureModal() {
           <>
             <DialogHeader>
               <DialogTitle className="text-xl font-bold">
-                Buat Microsite Sekarang
+                Create Your Microsite Now
               </DialogTitle>
               <DialogDescription className="text-muted-foreground">
-                Kami ingin mengenal Anda lebih baik. Isi informasi berikut agar tim kami dapat membantu membuat microsite yang sesuai kebutuhan.
+                Tell us a bit about yourself so our team can build a microsite that fits your needs perfectly.
               </DialogDescription>
             </DialogHeader>
 
             <form onSubmit={handleSubmit} className="space-y-4 mt-2">
               <div className="space-y-2">
-                <Label htmlFor="nama">Nama Lengkap *</Label>
+                <Label htmlFor="nama">Full Name *</Label>
                 <Input
                   id="nama"
-                  placeholder="Nama Anda"
+                  placeholder="Your name"
                   value={formData.nama}
                   onChange={handleInputChange("nama")}
                   className={cn(errors.nama && "border-red-500")}
@@ -160,7 +160,7 @@ export default function LeadCaptureModal() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="whatsapp">No. WhatsApp *</Label>
+                <Label htmlFor="whatsapp">WhatsApp Number *</Label>
                 <Input
                   id="whatsapp"
                   placeholder="08xxxxxxxxxx"
@@ -174,10 +174,10 @@ export default function LeadCaptureModal() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="jenisUsaha">Jenis Pekerjaan / Usaha *</Label>
+                <Label htmlFor="jenisUsaha">Profession / Business Type *</Label>
                 <Input
                   id="jenisUsaha"
-                  placeholder="Contoh: Agen Properti, Freelancer, UMKM"
+                  placeholder="e.g. Property Agent, Freelancer, Small Business"
                   value={formData.jenisUsaha}
                   onChange={handleInputChange("jenisUsaha")}
                   className={cn(errors.jenisUsaha && "border-red-500")}
@@ -188,10 +188,10 @@ export default function LeadCaptureModal() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="note">Catatan (Opsional)</Label>
+                <Label htmlFor="note">Notes (Optional)</Label>
                 <textarea
                   id="note"
-                  placeholder="Jelaskan usaha atau kebutuhan Anda untuk mempercepat proses onboarding"
+                  placeholder="Describe your business or requirements to speed up the onboarding process"
                   value={formData.note}
                   onChange={handleInputChange("note")}
                   rows={3}
@@ -207,12 +207,12 @@ export default function LeadCaptureModal() {
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">
                     <span className="h-4 w-4 animate-spin rounded-full border-2 border-background border-t-transparent" />
-                    Mengirim...
+                    Submitting...
                   </span>
                 ) : (
                   <span className="flex items-center gap-2">
                     <Icons.logo className="h-5 w-5" />
-                    Kirim Data
+                    Submit
                   </span>
                 )}
               </Button>
@@ -225,11 +225,11 @@ export default function LeadCaptureModal() {
             </div>
             
             <DialogTitle className="text-xl font-bold mb-2">
-              Terima Kasih!
+              Thank You!
             </DialogTitle>
             
             <DialogDescription className="text-muted-foreground mb-6">
-              Data Anda sudah kami terima dan dikirimkan ke tim sales. Kami akan segera menghubungi Anda via WhatsApp.
+              We've received your details and forwarded them to our team. We'll reach out to you via WhatsApp shortly.
             </DialogDescription>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">

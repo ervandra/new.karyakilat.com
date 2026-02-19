@@ -23,7 +23,7 @@ const data = [
     id: 3,
     title: "3. Command Center Live",
     content:
-      "We build, write, and launch your digital headquarters in 72 hours. You receive a complete success packet and become our priority support client.",
+      "We build, write, and launch your digital headquarters — delivered within 14 days. You receive a complete success packet and become our priority support client.",
     image: "/images/command-center-live.jpg",
     icon: <Rocket className="w-6 h-6 text-primary" />,
   },
@@ -34,7 +34,7 @@ export default function Component() {
     <Section 
       id="how-it-works"
       title="The Concierge Journey" 
-      subtitle="Total Time Investment: 20 Minutes"
+      subtitle="Your time commitment: 20 minutes. Our delivery: 14 days."
     >
       <Features data={data} />
     </Section>

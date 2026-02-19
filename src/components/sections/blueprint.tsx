@@ -61,24 +61,24 @@ const bonuses = [
 ];
 
 const ownership = [
-  "Domain & Hosting — milik Anda 100%",
-  "Design Source Files (Figma) — milik Anda",
-  "Analytics Data — akses penuh",
+  "Domain & Hosting — 100% yours",
+  "Design Source Files (Figma) — yours to keep",
+  "Analytics Data — full access",
   "Optional: Full Handover Management",
 ];
 
-const handoverNote = "Kami rekomendasikan untuk di-handle oleh Karya Kilat. Satu pintu, satu management, satu ownership — Anda fokus bisnis, aset digital aman di tangan profesional.";
+const handoverNote = "We recommend keeping management with Karya Kilat. One door, one team, one ownership — you focus on business while your digital assets stay in professional hands.";
 
 export default function Blueprint() {
   return (
     <Section
       id="blueprint"
-      title="Bukan 'Kucing Dalam Karung'"
-      subtitle="Ini Yang Anda Terima — Hari per Hari, Transparan 100%"
+      title="No Surprises"
+      subtitle="What You Receive — Day by Day, 100% Transparent"
       className="bg-card"
     >
       <p className="text-center text-primary font-semibold text-lg mb-12">
-        14 Hari. 6 Fase. 45+ Deliverables. Ownership Penuh.
+        14 Days. 6 Phases. 45+ Deliverables. Full Ownership.
       </p>
 
       {/* Timeline */}
@@ -129,7 +129,7 @@ export default function Blueprint() {
                 <h4 className="font-serif font-semibold text-lg text-foreground">
                   Included Bonus
                 </h4>
-                <p className="text-xs text-primary font-medium">Value Rp 5jt+</p>
+                <p className="text-xs text-muted-foreground">Valued at $400+</p>
               </div>
             </div>
             <ul className="space-y-3">

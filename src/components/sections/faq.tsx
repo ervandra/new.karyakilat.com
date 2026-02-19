@@ -9,28 +9,28 @@ import { siteConfig } from "@/lib/config";
 
 const faqs = [
   {
-    question: "Berapa lama prosesnya?",
-    answer: "Dari konsultasi hingga website live: 14 hari. Beberapa klien bahkan sudah online dalam 72 jam. Kami bergerak cepat karena kami paham waktu Anda sangat berharga. Konsultasi awal hanya 20 menit.",
+    question: "How long does the process take?",
+    answer: "From consultation to website live: 14 days. Some clients are online within 72 hours. We move fast because we know your time is precious. The initial consultation is only 20 minutes.",
   },
   {
-    question: "Apakah ada portfolio yang bisa saya lihat?",
-    answer: "Kami saat ini dalam fase Founding Partner (Q1 2026), bekerja dengan klien terpilih di BSD & Gading Serpong. Sebagai founding partner, Anda mendapatkan nilai lebih besar dengan harga spesial sebagai bagian dari program perdana kami. Hubungi kami untuk melihat preview proyek yang sedang berjalan.",
+    question: "Do you have a portfolio I can see?",
+    answer: "We are currently in the Founding Partner phase (Q1 2026), working with a select group of clients in BSD & Gading Serpong. As a founding partner, you get exceptional value at a special rate as part of our inaugural program. Contact us to preview an active project.",
   },
   {
-    question: "Apa saja yang termasuk dalam layanan white-glove ini?",
-    answer: "Semua urusan teknis kami yang handle — domain, hosting, SSL, desain, dukungan copywriting, hingga maintenance rutin. Anda tidak perlu menyentuh dashboard atau mengambil keputusan teknis apapun. Cukup berikan masukan di akhir, dan ekosistem digital Anda siap berjalan.",
+    question: "What's included in this white-glove service?",
+    answer: "We handle every technical detail — domain, hosting, SSL, design, copywriting support, and ongoing maintenance. You never need to touch a dashboard or make any technical decisions. Just give your final approval, and your digital ecosystem is ready to run.",
   },
   {
-    question: "Apa bedanya dengan pakai template?",
-    answer: "Template = Anda salah satu dari 12.000+ pengguna yang terlihat sama. Karya Kilat = Anda 1 dari 3 klien per bulan yang mendapat perhatian penuh. Desain kustom, domain, hosting, keamanan, copywriting — semuanya kami kelola. Anda fokus bisnis, digital presence Anda bekerja sendiri.",
+    question: "How is this different from using a template?",
+    answer: "Template = you're one of 12,000+ users who all look the same. Karya Kilat = you're 1 of 3 clients per month receiving our full attention. Custom design, domain, hosting, security, copywriting — all managed by us. You focus on business; your digital presence works for you.",
   },
   {
-    question: "Apa bedanya dengan agency biasa?",
-    answer: "Agency konvensional butuh berminggu-minggu rapat dan revisi tanpa kejelasan. Kami deliver dalam 14 hari dengan satu titik kontak langsung yang menjadi Digital Business Manager Anda — bukan vendor, tapi partner jangka panjang.",
+    question: "How is this different from a regular agency?",
+    answer: "Traditional agencies need weeks of meetings and revisions with no clear timeline. We deliver in 14 days with a single, direct point of contact who becomes your Digital Business Manager — not a vendor, but a long-term partner.",
   },
   {
-    question: "Apa yang terjadi setelah website live?",
-    answer: "Anda masuk sebagai klien priority support kami. Butuh perubahan? Satu pesan WhatsApp. Update konten? Kami yang urus. Anda tidak sedang membeli website — Anda mendapatkan partner digital yang selalu siap.",
+    question: "What happens after the website goes live?",
+    answer: "You enter our priority support client program. Need a change? One WhatsApp message. Content update? We handle it. You're not buying a website — you're gaining a digital partner who's always on standby.",
   },
 ];
 

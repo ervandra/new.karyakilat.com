@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const highlights = [
   { icon: Layout, text: "Premium Custom Design" },
-  { icon: Code2, text: "5+ Halaman & Fitur Lanjutan" },
+  { icon: Code2, text: "5+ Pages & Advanced Features" },
   { icon: Server, text: "CMS / Back-Office" },
   { icon: Shield, text: "Maintenance & Support" },
 ];
@@ -22,9 +22,9 @@ export default function CustomBanner() {
     >
       <div className="max-w-4xl mx-auto">
         <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-          Butuh lebih dari microsite? Website multi-halaman dengan desain premium,
-          fitur advanced, dan CMS untuk kelola konten sendiri.
-          Solusi lengkap untuk bisnis yang siap scale.
+          Need more than a microsite? A multi-page website with premium design,
+          advanced features, and a CMS to manage your own content.
+          The complete solution for businesses ready to scale.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -41,8 +41,8 @@ export default function CustomBanner() {
 
         <div className="text-center space-y-3">
           <p className="text-sm text-muted-foreground">
-            Mulai dari <span className="text-primary font-semibold">Rp 15 juta</span> &mdash;
-            Custom WordPress atau Headless Next.js
+            Starting from <span className="text-primary font-semibold">Rp 35,000,000</span> &mdash;
+            Custom WordPress or Headless Next.js
           </p>
           <Link
             href="/custom"
@@ -51,7 +51,7 @@ export default function CustomBanner() {
               "gap-2 gold-glow"
             )}
           >
-            Lihat Paket Custom
+            View Custom Packages
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

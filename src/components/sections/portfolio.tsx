@@ -10,34 +10,34 @@ const projects = [
     clientType: "Premium Property Agent",
     location: "Gading Serpong",
     scope: "Single Page Authority Hub",
-    result: "+47% Leads dalam 30 hari",
+    result: "+47% Leads in 30 Days",
     resultIcon: <TrendingUp className="w-4 h-4" />,
     description:
-      "Website profesional dengan WhatsApp integration dan lead capture untuk agen properti premium.",
+      "Professional website with WhatsApp integration and lead capture built for a premium property agent.",
     features: ["WhatsApp Direct", "Lead Form", "Property Gallery", "Mobile-First"],
     isDemo: true,
   },
   {
     title: "Beauty Clinic Booking",
-    clientType: "Klinik Kecantikan",
+    clientType: "Beauty Clinic",
     location: "BSD City",
     scope: "Multi-page + Booking System",
     result: "Premium Brand Perception",
     resultIcon: <Sparkles className="w-4 h-4" />,
     description:
-      "Command center lengkap dengan sistem booking online dan integrasi Google Maps.",
+      "Full command center with an online booking system and Google Maps integration.",
     features: ["Online Booking", "Treatment Menu", "Google Maps", "Before/After Gallery"],
     isDemo: true,
   },
   {
     title: "Tax Consultant Hub",
-    clientType: "Konsultan Pajak",
+    clientType: "Tax Consultant",
     location: "Alam Sutera",
     scope: "Authority Page + SEO",
     result: "Page 1 Google",
     resultIcon: <Globe className="w-4 h-4" />,
     description:
-      "Website authority dengan SEO optimization yang berhasil ranking di halaman pertama Google.",
+      "Authority website with SEO optimization that achieved first-page Google rankings.",
     features: ["SEO Optimized", "Service Pages", "FAQ Section", "Contact Forms"],
     isDemo: true,
   },
@@ -47,8 +47,8 @@ export default function Portfolio() {
   return (
     <Section
       id="portfolio"
-      title="Hasil Karya Kami"
-      subtitle="Sample projects yang menunjukkan standar kualitas Digital Headquarters"
+      title="Our Work"
+      subtitle="Sample projects showcasing the quality standard of Digital Headquarters"
     >
       <p className="text-center text-sm text-muted-foreground mb-8">
         <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">

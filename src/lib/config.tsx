@@ -37,7 +37,7 @@ export const siteConfig = {
   ],
   business: {
     type: "LocalBusiness",
-    priceRange: "Rp 5.000.000 - Rp 35.000.000+",
+    priceRange: "Rp 9.750.000 - Rp 65.000.000+",
     address: {
       streetAddress: "Gading Serpong",
       addressLocality: "Tangerang",
@@ -57,10 +57,10 @@ export const siteConfig = {
     github: "https://github.com/karyakilat",
     instagram: "https://instagram.com/karyakilat",
     whatsapp: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20Digital%20Business%20Manager%20dari%20Karya%20Kilat.",
-    whatsappSignature: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20SIGNATURE%20(Rp%204.95jt)%20Digital%20Business%20Manager.%20Bisnis%20saya%3A%20",
-    whatsappSovereign: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20SOVEREIGN%20(Rp%2011.96jt)%20Digital%20Business%20Manager.%20Saya%20butuh%20multi-page%20%2B%20CRM%20integration.",
-    whatsappAuthority: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20AUTHORITY%20(Rp%2024.97jt)%20Digital%20Business%20Manager.%20Saya%20cari%20partner%20digital%20jangka%20panjang%20dengan%20SLA.",
-    whatsappCustom: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Custom%20Premium%20Web%20Development%20Karya%20Kilat.%20Bisnis%20saya%3A%20",
+    whatsappSignature: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20SIGNATURE%20(Rp%209.75jt%20Founding%20Rate)%20Digital%20Business%20Manager.%20Bisnis%20saya%3A%20",
+    whatsappSovereign: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20SOVEREIGN%20(Rp%2022.5jt%20Founding%20Rate)%20Digital%20Business%20Manager.%20Saya%20butuh%20multi-page%20%2B%20CRM%20integration.",
+    whatsappAuthority: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20AUTHORITY%20(Rp%2045jt%20Founding%20Rate)%20Digital%20Business%20Manager.%20Saya%20cari%20partner%20digital%20jangka%20panjang%20dengan%20SLA.",
+    whatsappCustom: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20Custom%20Web%20Development%20dari%20Karya%20Kilat%20(mulai%20Rp%2035jt).%20Bisnis%20saya%3A%20",
   },
   header: [
     {

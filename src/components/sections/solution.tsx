@@ -63,7 +63,7 @@ const features = [
     ),
   },
   {
-    title: "14 Hari Selesai",
+    title: "14-Day Delivery",
     description:
       "From strategy call to live command center: 14 days. Some clients go live in 72 hours. We move at executive pace because your time is your most valuable asset.",
     className:
@@ -73,7 +73,7 @@ const features = [
         <Ripple className="absolute -bottom-full" />
         <img
           src="/images/14-days.jpg"
-          alt="14 Hari Selesai"
+          alt="14-Day Delivery"
           className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(212,175,55,.15)] group-hover:translate-y-[-10px] transition-all duration-300 rounded-xl object-cover"
         />
       </>

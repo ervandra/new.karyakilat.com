@@ -13,8 +13,8 @@ export default function CtaSection() {
   return (
     <Section
       id="cta"
-      title="Siap Tampil Sebagai Pemimpin Digital?"
-      subtitle="Bergabung bersama business owners BSD & Gading Serpong yang telah membangun digital presence mereka bersama kami."
+      title="Ready to Lead Your Digital Space?"
+      subtitle="Join business owners across BSD & Gading Serpong who have built their digital presence with us."
       className="bg-card rounded-2xl py-16 border border-border/50"
     >
       <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
@@ -30,7 +30,7 @@ export default function CtaSection() {
         </button>
       </div>
       <p className="text-center text-sm text-muted-foreground mt-6">
-        Hanya <span className="text-primary font-medium">3 slot tersedia</span> per bulan — untuk menjaga standar concierge kami.
+        Only <span className="text-primary font-medium">3 slots available</span> per month — to maintain our concierge standard.
       </p>
     </Section>
   );

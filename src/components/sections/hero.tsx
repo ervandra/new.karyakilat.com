@@ -54,7 +54,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        Bukan sekadar website — kami architect, launch, dan manage ekosistem digital bisnis Anda secara menyeluruh. Anda fokus di zona terbaik Anda, kami urus sisanya.
+        Not just a website — we architect, launch, and manage your entire digital business ecosystem. You focus on your zone of genius; we handle the rest.
       </motion.p>
       <motion.p
         className="mx-auto max-w-2xl text-center text-sm sm:text-base leading-relaxed text-primary font-medium mt-4"
@@ -66,7 +66,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        Done-for-You dalam 14 Hari. Total Time Investment Anda: 20 Menit.
+        Done-for-You in 14 Days. Your Total Time Investment: 20 Minutes.
       </motion.p>
     </div>
   );
@@ -109,8 +109,8 @@ function HeroCTA() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.0, duration: 0.8 }}
       >
-        Program Founding Partner aktif —{" "}
-        <span className="text-primary font-medium">harga naik setelah Feb–Mar 2026.</span>
+        Founding Partner Program active —{" "}
+        <span className="text-primary font-medium">price increases after Feb–Mar 2026.</span>
       </motion.p>
     </>
   );

@@ -31,107 +31,113 @@ const ease = [0.16, 1, 0.3, 1] as const;
 /* ─── Data ─── */
 
 const inclusions = [
-  { icon: Palette, text: "UI/UX premium custom design (semua tier)" },
-  { icon: Mail, text: "Contact form + newsletter (Mailchimp/Brevo)" },
-  { icon: Headphones, text: "Free maintenance 3-6 bulan (sesuai tier)" },
-  { icon: Shield, text: "Free support 1 tahun+ (WhatsApp/Email)" },
-  { icon: Search, text: "Basic SEO + optimization" },
-  { icon: Gauge, text: "Core Web Vitals 90+ (speed/cache optimization)" },
-  { icon: Settings, text: "Infra setup: konten WP auto-sync ke frontend" },
+  { icon: Palette, text: "Premium custom UI/UX design (all tiers)" },
+  { icon: Mail, text: "Contact form + newsletter integration (Mailchimp/Brevo)" },
+  { icon: Headphones, text: "Free maintenance 3–6 months (by tier)" },
+  { icon: Shield, text: "Free support 1 year+ (WhatsApp/Email)" },
+  { icon: Search, text: "Basic SEO + performance optimization" },
+  { icon: Gauge, text: "Core Web Vitals 90+ (speed & cache tuning)" },
+  { icon: Settings, text: "Infra setup: WP content auto-syncs to frontend" },
 ];
 
 const wpTiers = [
   {
-    name: "Lite",
-    price: "Rp 15-25 jt",
-    timeline: "2 minggu",
-    maintenance: "3 bulan",
+    name: "Catalyst",
+    price: "Rp 35,000,000",
+    timeline: "2–3 weeks",
+    maintenance: "3 months",
+    description: "Company profile platform. 5–10 custom pages, WP CMS admin, mobile-first, and built to make your team self-sufficient.",
     features: [
-      "Company profile (5-10 halaman)",
-      "Custom theme ringan",
+      "Company profile (5–10 pages)",
+      "Lightweight custom theme",
       "Mobile-first responsive",
-      "1 revisi desain",
+      "1 design revision",
     ],
   },
   {
-    name: "Basic",
-    price: "Rp 30-45 jt",
-    timeline: "3 minggu",
-    maintenance: "3 bulan",
+    name: "Architect",
+    price: "Rp 65,000,000",
+    timeline: "3–4 weeks",
+    maintenance: "6 months",
     popular: true,
+    description: "Multi-feature command platform. Booking, forms, advanced integrations, and CMS your team can own — no developer dependency after handover.",
     features: [
-      "Semua fitur Lite",
-      "Form/booking system",
+      "Everything in Catalyst",
+      "Form & booking system",
       "Advanced SEO",
-      "Integrasi 1-2 API (WA/Email)",
-      "3 revisi desain",
+      "1–2 API integrations (WA/Email)",
+      "3 design revisions",
     ],
   },
   {
-    name: "Pro",
-    price: "Rp 50-70 jt",
-    timeline: "4 minggu",
-    maintenance: "6 bulan",
+    name: "Sovereign",
+    price: "Rp 115,000,000",
+    timeline: "4–5 weeks",
+    maintenance: "6 months+",
+    description: "Enterprise-grade WordPress. Complex custom features, performance hardening, unlimited revision cycles, and a dedicated 6-month support line.",
     features: [
-      "Semua fitur Basic",
+      "Everything in Architect",
       "Advanced custom features",
       "Performance tuning",
-      "Unlimited revisi dev",
-      "Training & handover",
+      "Unlimited dev revisions",
+      "Training & full handover",
     ],
   },
 ];
 
 const headlessTiers = [
   {
-    name: "Lite",
-    price: "Rp 25-35 jt",
-    timeline: "3 minggu",
-    maintenance: "3 bulan",
+    name: "Catalyst",
+    price: "Rp 55,000,000",
+    timeline: "3 weeks",
+    maintenance: "3 months",
+    description: "Modern SSG architecture. WP backend your team knows, Next.js frontend your clients experience at elite speed.",
     features: [
       "Headless WP backend",
-      "Next.js frontend custom (SSG)",
+      "Custom Next.js frontend (SSG)",
       "PWA-ready",
-      "Vercel instance gratis",
+      "Vercel hosting included",
     ],
   },
   {
-    name: "Basic",
-    price: "Rp 45-60 jt",
-    timeline: "4 minggu",
-    maintenance: "6 bulan",
+    name: "Architect",
+    price: "Rp 95,000,000",
+    timeline: "4 weeks",
+    maintenance: "6 months",
     popular: true,
+    description: "Dynamic ISR with real-time content. Full WP admin + Next.js frontend with advanced SEO infrastructure and performance tuning.",
     features: [
-      "Semua fitur Lite",
-      "Dynamic ISR (real-time content update)",
+      "Everything in Catalyst",
+      "Dynamic ISR (real-time content updates)",
       "Advanced performance & SEO",
     ],
   },
   {
-    name: "Pro",
-    price: "Rp 70-90 jt",
-    timeline: "5 minggu",
-    maintenance: "6 bulan",
+    name: "Sovereign",
+    price: "Rp 175,000,000",
+    timeline: "5–6 weeks",
+    maintenance: "6 months+",
+    description: "Your flagship digital platform. Custom optimizations, full Vercel setup, elite Lighthouse scores, and a handover that makes your team fully independent.",
     features: [
-      "Semua fitur Basic",
-      "Custom optimasi (image lazy, etc.)",
-      "Handover Vercel setup lengkap",
+      "Everything in Architect",
+      "Custom optimizations (image lazy-load, etc.)",
+      "Full Vercel setup & handover",
     ],
   },
 ];
 
 const comparisonRows = [
-  { aspect: "Speed", wp: "Bagus (optimized)", headless: "Elite (SSR/SSG, Lighthouse 100)", pick: "Headless untuk high-traffic" },
-  { aspect: "Design", wp: "Tinggi (custom)", headless: "Fleksibel (React)", pick: "Headless lebih modern" },
-  { aspect: "Security", wp: "Hardened", headless: "Tinggi (statis API)", pick: "Kedua aman" },
-  { aspect: "Ease Update", wp: "Mudah (WP admin)", headless: "WP admin + auto-pull", pick: "WP lebih simple client" },
-  { aspect: "Harga", wp: "Lebih terjangkau", headless: "Premium value", pick: "Headless future-proof" },
+  { aspect: "Speed", wp: "Great (optimized)", headless: "Elite (SSR/SSG, Lighthouse 100)", pick: "Headless for high-traffic sites" },
+  { aspect: "Design", wp: "High (fully custom)", headless: "Flexible (React)", pick: "Headless feels more modern" },
+  { aspect: "Security", wp: "Hardened", headless: "High (static API)", pick: "Both are secure" },
+  { aspect: "Easy Updates", wp: "Easy (WP admin)", headless: "WP admin + auto-sync", pick: "WP is simpler for clients" },
+  { aspect: "Price", wp: "More affordable", headless: "Premium value", pick: "Headless is more future-proof" },
 ];
 
 const steps = [
-  { step: "1", text: "Diskusikan profil bisnis Anda (UMKM/corporate) & budget range" },
-  { step: "2", text: "Pilih opsi + tier, kami buatkan custom proposal" },
-  { step: "3", text: "Deposit 40% — start prototype dalam 1 minggu" },
+  { step: "1", text: "Tell us about your business and budget — no pressure, no forms" },
+  { step: "2", text: "Pick your option and tier; we'll send you a detailed proposal" },
+  { step: "3", text: "40% deposit to kick off — prototype ready within 1 week" },
 ];
 
 /* ─── Components ─── */
@@ -149,7 +155,7 @@ function CustomHero() {
         >
           <Code2 className="w-4 h-4 text-primary" />
           <span className="text-xs font-medium text-primary tracking-wide">
-            Premium Tech Partner
+            Bespoke Digital Engineering
           </span>
         </motion.div>
 
@@ -169,8 +175,7 @@ function CustomHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8, ease }}
         >
-          Website custom, ringan, secure — tanpa bloating plugins.
-          Modern stack untuk speed & SEO premium. Future-proof + maintenance gratis.
+          Beyond a microsite, we engineer full-scale digital platforms — custom-built, future-proof, and backed by professional maintenance. When your business needs infrastructure, not just presence.
         </motion.p>
 
         <motion.p
@@ -179,8 +184,7 @@ function CustomHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8, ease }}
         >
-          Pilih <span className="text-primary font-medium">Custom WordPress</span> (cepat, familiar)
-          atau <span className="text-primary font-medium">Headless WP + Next.js</span> (modern, super cepat, premium)
+          Two tracks: <span className="text-primary font-medium">Custom WordPress</span> for ease and familiarity. <span className="text-primary font-medium">Headless Next.js + WP</span> for elite performance and modern architecture. Both built to last.
         </motion.p>
 
         <motion.div
@@ -197,7 +201,7 @@ function CustomHero() {
               "gap-2 gold-glow"
             )}
           >
-            Konsultasi Sekarang
+            Talk to Us Now
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
@@ -207,7 +211,7 @@ function CustomHero() {
               "gap-2 border-primary/30 hover:bg-primary/10"
             )}
           >
-            Lihat Paket & Harga
+            See Packages & Pricing
           </Link>
         </motion.div>
       </div>
@@ -218,8 +222,8 @@ function CustomHero() {
 function InclusionsSection() {
   return (
     <Section
-      title="Semua Paket Include"
-      subtitle="Standard di setiap tier, tanpa biaya tambahan"
+      title="Everything Included"
+      subtitle="Standard across every tier — no hidden fees, ever"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
         {inclusions.map(({ icon: Icon, text }) => (
@@ -233,7 +237,7 @@ function InclusionsSection() {
         ))}
       </div>
       <p className="text-center text-sm text-muted-foreground mt-6">
-        <span className="text-primary font-medium">Tidak termasuk:</span> Domain + hosting (estimasi di bawah)
+        Domain &amp; hosting setup: we recommend and configure — you own it. Costs vary by scale.
       </p>
     </Section>
   );
@@ -263,9 +267,14 @@ function TierCard({
         </span>
       </div>
       <div className="mt-2 flex items-center gap-4 text-xs text-muted-foreground">
-        <span>{tier.timeline}</span>
+        <span>Delivered in {tier.timeline}</span>
         <span>Maintenance {tier.maintenance}</span>
       </div>
+      {tier.description && (
+        <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+          {tier.description}
+        </p>
+      )}
       <ul className="mt-6 space-y-2 flex-1">
         {tier.features.map((f) => (
           <li key={f} className="flex items-center gap-2 text-sm text-foreground/80">
@@ -282,11 +291,11 @@ function PricingWP() {
   return (
     <Section
       id="pricing-wp"
-      title="Opsi 1"
-      subtitle="Custom WordPress Template"
+      title="Option 1"
+      subtitle="Custom WordPress"
     >
       <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto text-sm">
-        Upgrade dari WP standard: custom theme khusus, cepat, secure, premium design.
+        Professional-grade WordPress — purpose-built, not templated. Every installation is architected from scratch for your business logic.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {wpTiers.map((tier) => (
@@ -301,12 +310,11 @@ function PricingHeadless() {
   return (
     <Section
       id="pricing-headless"
-      title="Opsi 2"
+      title="Option 2"
       subtitle="Headless WP + Next.js Frontend"
     >
       <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto text-sm">
-        Super fast SSR/SSG, modern React, Vercel deploy. WP sebagai CMS, Next.js sebagai frontend.
-        Akun Vercel kami gratiskan dan di-handover.
+        The engineering choice for businesses that demand elite performance. WordPress handles your content; Next.js delivers it at Lighthouse 100 speed.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {headlessTiers.map((tier) => (
@@ -320,7 +328,7 @@ function PricingHeadless() {
 function ComparisonSection() {
   return (
     <Section
-      title="Perbandingan"
+      title="Side-by-Side Comparison"
       subtitle="Custom WP vs Headless Next.js (Basic Tier)"
       className="bg-card"
     >
@@ -330,7 +338,7 @@ function ComparisonSection() {
           <thead>
             <tr className="bg-background">
               <th className="text-left p-4 font-serif font-semibold text-foreground">
-                Aspek
+                Aspect
               </th>
               <th className="text-left p-4 font-serif font-semibold text-muted-foreground">
                 Custom WP
@@ -339,7 +347,7 @@ function ComparisonSection() {
                 Headless Next.js
               </th>
               <th className="text-left p-4 font-serif font-semibold text-foreground/70 text-sm">
-                Rekomendasi
+                Our Pick
               </th>
             </tr>
           </thead>
@@ -393,16 +401,16 @@ function ComparisonSection() {
 function HostingEstimates() {
   return (
     <Section
-      title="Estimasi Tambahan"
-      subtitle="Domain + Hosting (Tahunan)"
+      title="Estimated Add-Ons"
+      subtitle="Domain + Hosting (Yearly)"
     >
       <div className="overflow-hidden rounded-2xl border border-border/50 max-w-2xl mx-auto">
         <table className="w-full text-sm">
           <thead>
             <tr className="bg-background">
               <th className="text-left p-4 font-serif font-semibold">Item</th>
-              <th className="text-left p-4 font-serif font-semibold">Estimasi (IDR)</th>
-              <th className="text-left p-4 font-serif font-semibold text-muted-foreground">Catatan</th>
+              <th className="text-left p-4 font-serif font-semibold">Estimate (IDR)</th>
+              <th className="text-left p-4 font-serif font-semibold text-muted-foreground">Notes</th>
             </tr>
           </thead>
           <tbody>
@@ -412,20 +420,20 @@ function HostingEstimates() {
               <td className="p-4 text-muted-foreground text-xs">Niagahoster / Rumahweb</td>
             </tr>
             <tr className="bg-background">
-              <td className="p-4 font-medium">WP Hosting (Opsi 1)</td>
+              <td className="p-4 font-medium">WP Hosting (Option 1)</td>
               <td className="p-4 text-primary">1-3 jt</td>
               <td className="p-4 text-muted-foreground text-xs">Shared/VPS (Hostinger/Niaga)</td>
             </tr>
             <tr className="bg-background/50">
-              <td className="p-4 font-medium">Vercel (Opsi 2)</td>
-              <td className="p-4 text-primary">Gratis - 2-5 jt</td>
-              <td className="p-4 text-muted-foreground text-xs">Free tier cukup Lite/Basic</td>
+              <td className="p-4 font-medium">Vercel (Option 2)</td>
+              <td className="p-4 text-primary">Free – 2-5 jt</td>
+              <td className="p-4 text-muted-foreground text-xs">Free tier covers Lite & Basic</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p className="text-center text-sm text-muted-foreground mt-4">
-        Total setup tahun pertama: ~2-8 jt (tergantung tier)
+        Total first-year setup: ~2–8 jt (depends on tier)
       </p>
     </Section>
   );
@@ -434,15 +442,14 @@ function HostingEstimates() {
 function CoreValue() {
   return (
     <Section
-      title="Core Value"
-      subtitle="Membangun Akses Digital untuk Semua"
+      title="Why Karya Kilat for Custom Development?"
+      subtitle="Precision engineering. No agency bloat."
       className="bg-card"
     >
       <p className="text-center text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-        Kami ingin membantu pemilik usaha dari segala kalangan mendapatkan akses online,
-        identitas digital, kredibilitas, dan sarana marketing yang proper dan premium.
-        Semua bisa dibicarakan termasuk negosiasi harga — kami ingin memberikan value terbaik
-        untuk segala kebutuhan usaha dan budget Anda.
+        Custom web development shouldn&apos;t take 6 months and feel like a black box.
+        We run tight, transparent builds — weekly check-ins, staging previews at each phase,
+        and a handover that actually makes sense. 15+ years of engineering. Zero tolerance for tech debt.
       </p>
     </Section>
   );
@@ -454,8 +461,8 @@ function CustomCTA() {
   return (
     <Section
       id="custom-cta"
-      title="Langkah Selanjutnya"
-      subtitle="Mulai Bangun Website Premium Anda"
+      title="Ready to Get Started?"
+      subtitle="Tell us your vision. We'll tell you the right track and timeline."
       className="bg-card rounded-2xl border border-border/50"
     >
       <div className="max-w-2xl mx-auto mb-8">
@@ -480,7 +487,7 @@ function CustomCTA() {
             "gap-2 gold-glow"
           )}
         >
-          Konsultasi via WhatsApp
+          Chat Us on WhatsApp
           <ArrowRight className="w-4 h-4" />
         </Link>
         <button
@@ -490,7 +497,7 @@ function CustomCTA() {
             "gap-2 border-primary/30 hover:bg-primary/10"
           )}
         >
-          Isi Form Konsultasi
+          Fill Out Inquiry Form
         </button>
       </div>
       <p className="text-center text-sm text-muted-foreground mt-6">
@@ -511,7 +518,6 @@ export default function CustomPage() {
       <PricingWP />
       <PricingHeadless />
       <ComparisonSection />
-      <HostingEstimates />
       <CoreValue />
       <CustomCTA />
       <Footer />

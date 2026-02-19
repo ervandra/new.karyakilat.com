@@ -63,7 +63,7 @@ export default function Comparison() {
                 <th className="text-left p-4 font-serif font-semibold text-muted-foreground">
                   Template Service
                   <span className="block text-xs font-normal opacity-60">
-                    (Rp 100K/bln)
+                    (~$30/mo)
                   </span>
                 </th>
                 <th className="text-left p-4 font-serif font-semibold text-primary">

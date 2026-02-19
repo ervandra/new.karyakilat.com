@@ -12,20 +12,20 @@ const stats = [
   {
     icon: <Users className="w-6 h-6 text-primary" />,
     value: "3",
-    label: "Klien per bulan",
-    description: "Kami sengaja batasi untuk menjaga standar concierge",
+    label: "Clients per month",
+    description: "Intentionally limited to maintain our concierge standard",
   },
   {
     icon: <Award className="w-6 h-6 text-primary" />,
     value: "14",
-    label: "Hari delivery",
-    description: "Dari konsultasi hingga digital presence Anda live",
+    label: "Days to delivery",
+    description: "From consultation to your digital presence going live",
   },
   {
     icon: <MessageCircle className="w-6 h-6 text-primary" />,
     value: "20",
-    label: "Menit waktu Anda",
-    description: "Total yang kami butuhkan dari Anda. Sisanya kami yang urus",
+    label: "Minutes of your time",
+    description: "Total we need from you. We handle everything else",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Testimonials() {
     <Section
       id="testimonials"
       title="Founding Partner Program"
-      subtitle="Kami baru saja membuka pintu — dan kami memilih dengan selektif"
+      subtitle="We just opened our doors — and we choose our partners selectively"
       className="max-w-8xl"
     >
       <div className="mx-auto max-w-4xl mt-8">
@@ -46,12 +46,12 @@ export default function Testimonials() {
           viewport={{ once: true }}
         >
           <p className="text-lg text-foreground/80 leading-relaxed max-w-2xl mx-auto">
-            Karya Kilat baru diluncurkan — dan kami sengaja memulai dengan cara yang berbeda.{" "}
+            Karya Kilat was just launched — and we chose to start differently.{" "}
             <span className="text-primary font-semibold">
-              Founding Partners mendapatkan harga terbaik yang tidak akan kami tawarkan lagi
+              Founding Partners receive the best pricing we will never offer again
             </span>{" "}
-            setelah program ini berakhir. Sebagai gantinya, kami meminta satu hal: izin untuk menjadikan
-            perjalanan digital Anda sebagai kisah sukses pertama kami.
+            after this program ends. In return, we ask for one thing: permission to make
+            your digital journey our very first success story.
           </p>
         </motion.div>
 
@@ -89,8 +89,8 @@ export default function Testimonials() {
             ))}
           </div>
           <p className="text-muted-foreground italic mb-6 max-w-xl mx-auto">
-            "Kisah sukses pertama sedang dalam proses. Jadilah Founding Partner kami — 
-            dan biarkan digital presence Anda menjadi bukti nyata pertama Karya Kilat."
+            "Our first success story is in progress. Become our Founding Partner —
+            and let your digital presence be Karya Kilat's first proof of excellence."
           </p>
           <Link
             href={siteConfig.links.whatsapp}
@@ -100,7 +100,7 @@ export default function Testimonials() {
               "border-primary/30 hover:bg-primary/10"
             )}
           >
-            Hubungi Kami di WhatsApp
+            Contact Us on WhatsApp
           </Link>
         </motion.div>
       </div>
