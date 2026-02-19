@@ -13,9 +13,9 @@ const data = [
   },
   {
     id: 2,
-    title: "2. Legacy Extraction",
+    title: "2. Brand Discovery Session",
     content:
-      "A brief voice interview to capture your brand's soul. We extract everything needed—your story, your differentiators, your voice. You stay in your zone of genius.",
+      "A brief conversation to capture your brand's soul. We uncover your story, your differentiators, and your voice — so the final result sounds exactly like you, at your best.",
     image: "/images/legacy-extraction.jpg",
     icon: <Mic className="w-6 h-6 text-primary" />,
   },

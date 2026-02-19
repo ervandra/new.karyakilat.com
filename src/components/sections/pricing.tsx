@@ -6,17 +6,14 @@ import { cn } from "@/lib/utils";
 import { Check, Crown, Building2, Globe, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { siteConfig } from "@/lib/config";
-import { useLeadCapture } from "@/components/lead-capture-context";
 
 export default function Pricing() {
-  const { openModal } = useLeadCapture();
-
   const plans = [
     {
-      name: "Professional",
+      name: "Signature",
       price: "Rp 4.950.000",
-      period: "(Start From)",
-      description: "Single Page Authority Hub. 25+ Deliverables.",
+      period: "(Founding Rate)",
+      description: "Single-page Digital HQ. Tampil profesional, generate leads via WhatsApp.",
       features: [
         "Bespoke single-page design",
         "Custom domain setup",
@@ -26,17 +23,17 @@ export default function Pricing() {
         "Training walkthrough",
         "SEO basics included",
       ],
-      buttonText: "Request Details",
-      href: siteConfig.links.whatsappProfessional,
+      buttonText: "Apply for Invitation",
+      href: siteConfig.links.whatsappSignature,
       isPopular: false,
       disabled: false,
       icon: <Globe className="w-5 h-5" />,
     },
     {
-      name: "Executive",
+      name: "Sovereign",
       price: "Rp 11.960.000",
-      period: "(Beta)",
-      description: "Multi-page Command Center. 40+ Deliverables. 60-Day Support.",
+      period: "(Founding Rate)",
+      description: "Multi-page Command Center. Brand strategy, copywriting, CRM — semua terkelola.",
       features: [
         "Multi-page command center",
         "Brand strategy session",
@@ -47,8 +44,8 @@ export default function Pricing() {
         "Dedicated account manager",
         "SEO 20-point checklist",
       ],
-      buttonText: "Book Consultation",
-      href: "#",
+      buttonText: "Apply for Invitation",
+      href: siteConfig.links.whatsappSovereign,
       isPopular: true,
       disabled: false,
       icon: <Crown className="w-5 h-5" />,
@@ -56,10 +53,10 @@ export default function Pricing() {
     {
       name: "Authority",
       price: "Rp 24.970.000",
-      period: "(Beta)",
-      description: "Complete Digital Ecosystem. Quarterly Strategy Reviews.",
+      period: "(Founding Rate)",
+      description: "Ekosistem Digital lengkap. SEO dominance, lead systems, dan quarterly strategy review.",
       features: [
-        "Everything in Executive",
+        "Everything in Sovereign",
         "SEO & local search dominance",
         "Lead generation systems",
         "Performance analytics",
@@ -77,8 +74,8 @@ export default function Pricing() {
 
   return (
     <Section 
-      title="Partnership Tiers" 
-      subtitle="Investment levels designed for serious business owners"
+      title="Choose Your Partnership" 
+      subtitle="Three levels of Digital Business Management — built for serious business owners in BSD & Gading Serpong"
     >
       {/* Founding Client Badge */}
       <div className="flex justify-center mb-8">
@@ -133,30 +130,18 @@ export default function Pricing() {
                 </ul>
               )}
             </div>
-            {plan.isPopular ? (
-              <button
-                onClick={openModal}
-                className={cn(
-                  buttonVariants({ variant: "default" }),
-                  "mt-8 w-full gold-glow",
-                  plan.disabled && "pointer-events-none opacity-50"
-                )}
-              >
-                {plan.buttonText}
-              </button>
-            ) : (
-              <Link
+            <Link
                 href={plan.href}
                 target="_blank"
                 className={cn(
-                  buttonVariants({ variant: "outline" }),
-                  "mt-8 w-full border-primary/30 hover:bg-primary/10",
+                  buttonVariants({ variant: plan.isPopular ? "default" : "outline" }),
+                  "mt-8 w-full",
+                  plan.isPopular ? "gold-glow" : "border-primary/30 hover:bg-primary/10",
                   plan.disabled && "pointer-events-none opacity-50"
                 )}
-              >
+            >
                 {plan.buttonText}
-              </Link>
-            )}
+            </Link>
           </div>
         ))}
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calendar, Shield } from "lucide-react";
+import { Shield } from "lucide-react";
 
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
@@ -41,8 +41,8 @@ function HeroTitles() {
           ease,
         }}
       >
-        Your Digital Headquarters.{" "}
-        <span className="text-primary">Professionally Managed.</span>
+        Your Digital{" "}
+        <span className="text-primary">Business Manager.</span>
       </motion.h1>
       <motion.p
         className="mx-auto max-w-2xl text-center text-lg leading-relaxed text-muted-foreground sm:text-xl text-balance"
@@ -54,8 +54,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        White-glove digital infrastructure untuk CEO & komunitas eksklusif mereka.
-        Zero hassle. Maximum authority.
+        Bukan sekadar website — kami architect, launch, dan manage ekosistem digital bisnis Anda secara menyeluruh. Anda fokus di zona terbaik Anda, kami urus sisanya.
       </motion.p>
       <motion.p
         className="mx-auto max-w-2xl text-center text-sm sm:text-base leading-relaxed text-primary font-medium mt-4"
@@ -67,7 +66,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        Website Premium Done-for-You dalam 14 Hari — Anda Fokus Bisnis, Kami Urus Sisanya.
+        Done-for-You dalam 14 Hari. Total Time Investment Anda: 20 Menit.
       </motion.p>
     </div>
   );
@@ -92,18 +91,16 @@ function HeroCTA() {
           )}
         >
           <Icons.logo className="h-5 w-5" />
-          Mulai Konsultasi
+          Apply for Invitation
         </button>
         <Link
-          href={siteConfig.links.whatsapp}
-          target="_blank"
+          href="#how-it-works"
           className={cn(
             buttonVariants({ variant: "outline", size: "lg" }),
             "w-full sm:w-auto flex gap-2 border-primary/30 hover:bg-primary/10"
           )}
         >
-          <Calendar className="h-5 w-5" />
-          Jadwalkan Konsultasi
+          See How It Works
         </Link>
       </motion.div>
       <motion.p
@@ -112,7 +109,8 @@ function HeroCTA() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.0, duration: 0.8 }}
       >
-        <span className="text-primary font-medium">Slot tersedia</span> bulan ini.
+        Program Founding Partner aktif —{" "}
+        <span className="text-primary font-medium">harga naik setelah Feb–Mar 2026.</span>
       </motion.p>
     </>
   );

@@ -5,7 +5,7 @@ export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
   name: "Karya Kilat",
-  description: "White-glove digital infrastructure untuk CEO & komunitas eksklusif mereka. Zero hassle. Maximum authority. Digital Headquarters untuk pemimpin bisnis BSD & Gading Serpong.",
+  description: "Your Digital Business Manager. Kami architect, launch, dan manage ekosistem digital bisnis Anda — Done-for-You dalam 14 Hari untuk pemimpin bisnis BSD & Gading Serpong.",
   url: "https://karyakilat.com",
   locale: "id_ID",
   author: {
@@ -56,10 +56,10 @@ export const siteConfig = {
     discord: "https://discord.gg/karyakilat",
     github: "https://github.com/karyakilat",
     instagram: "https://instagram.com/karyakilat",
-    whatsapp: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20Digital%20Headquarters",
-    whatsappProfessional: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20PROFESSIONAL%20(Rp%204.95jt)%20Digital%20Headquarters.%20Bisnis%20saya%3A%20",
-    whatsappExecutive: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20EXECUTIVE%20(Rp%2011.96jt)%20Digital%20Headquarters.%20Saya%20butuh%20multi-page%20%2B%20CRM%20integration.",
-    whatsappAuthority: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20AUTHORITY%20(Rp%2024.97jt)%20Digital%20Headquarters.%20Saya%20cari%20partner%20digital%20jangka%20panjang%20dengan%20SLA.",
+    whatsapp: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20Digital%20Business%20Manager%20dari%20Karya%20Kilat.",
+    whatsappSignature: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20SIGNATURE%20(Rp%204.95jt)%20Digital%20Business%20Manager.%20Bisnis%20saya%3A%20",
+    whatsappSovereign: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20SOVEREIGN%20(Rp%2011.96jt)%20Digital%20Business%20Manager.%20Saya%20butuh%20multi-page%20%2B%20CRM%20integration.",
+    whatsappAuthority: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20paket%20AUTHORITY%20(Rp%2024.97jt)%20Digital%20Business%20Manager.%20Saya%20cari%20partner%20digital%20jangka%20panjang%20dengan%20SLA.",
     whatsappCustom: "https://wa.me/6285124354868?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20Custom%20Premium%20Web%20Development%20Karya%20Kilat.%20Bisnis%20saya%3A%20",
   },
   header: [

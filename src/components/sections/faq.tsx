@@ -13,24 +13,24 @@ const faqs = [
     answer: "Dari konsultasi hingga website live: 14 hari. Beberapa klien bahkan sudah online dalam 72 jam. Kami bergerak cepat karena kami paham waktu Anda sangat berharga. Konsultasi awal hanya 20 menit.",
   },
   {
-    question: "Do you have a portfolio I can see?",
-    answer: "We're currently in our Founding Partner phase (Q1 2026), working with select BSD & Gading Serpong business owners. As a founding partner, you receive significant value in exchange for testimonials and case study participation. Contact us for work-in-progress previews.",
+    question: "Apakah ada portfolio yang bisa saya lihat?",
+    answer: "Kami saat ini dalam fase Founding Partner (Q1 2026), bekerja dengan klien terpilih di BSD & Gading Serpong. Sebagai founding partner, Anda mendapatkan nilai lebih besar dengan harga spesial sebagai bagian dari program perdana kami. Hubungi kami untuk melihat preview proyek yang sedang berjalan.",
   },
   {
-    question: "What's included in the 'white-glove' service?",
-    answer: "Everything technical. We handle domain registration, hosting setup, SSL certificates, design, copywriting support, and ongoing maintenance. You never see a dashboard or deal with any technical decisions. Your only job is to approve the final look.",
+    question: "Apa saja yang termasuk dalam layanan white-glove ini?",
+    answer: "Semua urusan teknis kami yang handle — domain, hosting, SSL, desain, dukungan copywriting, hingga maintenance rutin. Anda tidak perlu menyentuh dashboard atau mengambil keputusan teknis apapun. Cukup berikan masukan di akhir, dan ekosistem digital Anda siap berjalan.",
   },
   {
     question: "Apa bedanya dengan pakai template?",
-    answer: "Template = Anda salah satu dari 12,000+ pengguna. Karya Kilat = Anda 1 dari 3 klien per bulan. Kami handle everything: design custom, domain, hosting, security, copywriting support, dan maintenance. Anda hanya perlu approve desain final.",
+    answer: "Template = Anda salah satu dari 12.000+ pengguna yang terlihat sama. Karya Kilat = Anda 1 dari 3 klien per bulan yang mendapat perhatian penuh. Desain kustom, domain, hosting, keamanan, copywriting — semuanya kami kelola. Anda fokus bisnis, digital presence Anda bekerja sendiri.",
   },
   {
     question: "Apa bedanya dengan agency biasa?",
-    answer: "Agency butuh minggu-an meeting dan revisi tanpa akhir. Kami deliver dalam 14 hari dengan satu kontak langsung (Ervandra) yang menjadi tech partner Anda. Personal attention yang agency tidak bisa berikan.",
+    answer: "Agency konvensional butuh berminggu-minggu rapat dan revisi tanpa kejelasan. Kami deliver dalam 14 hari dengan satu titik kontak langsung yang menjadi Digital Business Manager Anda — bukan vendor, tapi partner jangka panjang.",
   },
   {
-    question: "What happens after launch?",
-    answer: "You become a priority support client. Need a tweak? One WhatsApp message. Content update? We handle it. You're not buying a website—you're gaining a tech partner on speed-dial.",
+    question: "Apa yang terjadi setelah website live?",
+    answer: "Anda masuk sebagai klien priority support kami. Butuh perubahan? Satu pesan WhatsApp. Update konten? Kami yang urus. Anda tidak sedang membeli website — Anda mendapatkan partner digital yang selalu siap.",
   },
 ];
 

@@ -71,7 +71,7 @@ export default function DrawerDemo() {
               )}
             >
               <Icons.logo className="h-6 w-6" />
-              Buat Microsite Sekarang
+              Apply for Invitation
             </button>
           </DrawerClose>
         </DrawerFooter>

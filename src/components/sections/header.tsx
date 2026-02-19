@@ -61,7 +61,7 @@ export default function Header() {
                 )}
               >
                 <Icons.logo className="h-5 w-5" />
-                Mulai Konsultasi
+                Apply for Invitation
               </button>
             </div>
           </div>
