@@ -88,21 +88,21 @@ export default function PropertyAgentDemo() {
               Sandra <br/> <span className="text-[#d4af37]">Wijaya.</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/60 font-light leading-relaxed max-w-lg">
-              "Rumah Impian Anda, Investasi Terbaik Anda — Saya Pastikan."
+              "Your Dream Home, Your Best Investment — I Make It Happen."
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4 text-sm text-white/40">
-              <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#d4af37]" /> 12 Tahun Pengalaman</span>
-              <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#d4af37]" /> 350+ Transaksi</span>
+              <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#d4af37]" /> 12 Years Experience</span>
+              <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#d4af37]" /> 350+ Transactions</span>
               <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#d4af37]" /> Top Agent 2024</span>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <GoldButton>
-                <Phone className="w-4 h-4" /> Konsultasi via WhatsApp
+                <Phone className="w-4 h-4" /> Consult via WhatsApp
               </GoldButton>
               <GoldButton variant="outline" href="#listings">
-                Lihat Properti <ArrowRight className="w-4 h-4 ml-2" />
+                View Properties <ArrowRight className="w-4 h-4 ml-2" />
               </GoldButton>
             </div>
           </motion.div>
@@ -128,10 +128,10 @@ export default function PropertyAgentDemo() {
       <section className="border-y border-white/5 bg-[#0f0f0f]">
         <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { label: "Properti Terjual", value: "350+", icon: Home },
-            { label: "Rata-rata Nilai", value: "Rp 850M+", icon: TrendingUp },
-            { label: "Rating Klien", value: "4.9/5", icon: Star },
-            { label: "Top Agent BSD", value: "3 Tahun", icon: Award },
+            { label: "Properties Sold", value: "350+", icon: Home },
+            { label: "Average Value", value: "Rp 850M+", icon: TrendingUp },
+            { label: "Client Rating", value: "4.9/5", icon: Star },
+            { label: "Top Agent BSD", value: "3 Years", icon: Award },
           ].map((stat, i) => (
             <div key={i} className="text-center space-y-2">
               <stat.icon className="w-6 h-6 text-[#d4af37] mx-auto opacity-80" />
@@ -144,13 +144,13 @@ export default function PropertyAgentDemo() {
 
       {/* 3. Area Expertise */}
       <Section id="areas">
-        <SectionHeading title="Spesialis Kawasan Premium" subtitle="Area of Expertise" />
+        <SectionHeading title="Premium Area Specialist" subtitle="Area of Expertise" />
         <div className="grid md:grid-cols-4 gap-6">
           {[
-            { title: "BSD City", desc: "Pusat bisnis & hunian premium berkembang." },
-            { title: "Gading Serpong", desc: "Komunitas eksklusif & fasilitas lengkap." },
-            { title: "Alam Sutera", desc: "Hunian modern dengan aksesibilitas tinggi." },
-            { title: "Cisauk", desc: "Kawasan sunrise properti 2026." },
+            { title: "BSD City", desc: "Growing premium business & residential hub." },
+            { title: "Gading Serpong", desc: "Exclusive community with complete facilities." },
+            { title: "Alam Sutera", desc: "Modern living with high accessibility." },
+            { title: "Cisauk", desc: "Sunrise property zone of 2026." },
           ].map((area, i) => (
             <motion.div 
               key={i}
@@ -167,30 +167,30 @@ export default function PropertyAgentDemo() {
 
       {/* 4. Featured Listings */}
       <Section id="listings" className="bg-[#0f0f0f]">
-        <SectionHeading title="Featured Listings" subtitle="Kurasi Terbaik Minggu Ini" />
+        <SectionHeading title="Featured Listings" subtitle="Top Picks This Week" />
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
               title: "The Green BSD - Hook",
               price: "Rp 4.2 Miliar",
-              specs: "4 KT | 4 KM | LT 240m²",
-              tag: "DIJUAL",
+              specs: "4 BR | 4 BA | 240m² Land",
+              tag: "FOR SALE",
               loc: "BSD City, Tangerang Selatan",
               img: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=800"
             },
             {
               title: "Cluster Foresta Modern",
               price: "Rp 2.85 Miliar",
-              specs: "3 KT | 3 KM | LT 160m²",
-              tag: "DIJUAL",
+              specs: "3 BR | 3 BA | 160m² Land",
+              tag: "FOR SALE",
               loc: "Gading Serpong, Tangerang",
               img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800"
             },
             {
               title: "Ruko Premium Corner",
               price: "Rp 3.6 Miliar",
-              specs: "4 Lantai | Komersial",
-              tag: "DIJUAL",
+              specs: "4 Floors | Commercial",
+              tag: "FOR SALE",
               loc: "Alam Sutera, Tangerang",
               img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
             }
@@ -218,26 +218,26 @@ export default function PropertyAgentDemo() {
                   {item.specs}
                 </div>
                 <button className="w-full py-3 mt-2 border border-white/20 text-white hover:bg-white hover:text-black transition-colors text-sm uppercase tracking-widest font-medium">
-                  Lihat Detail
+                  View Details
                 </button>
               </div>
             </div>
           ))}
         </div>
         <div className="text-center mt-12">
-          <GoldButton variant="outline">Lihat Semua Properti</GoldButton>
+          <GoldButton variant="outline">View All Properties</GoldButton>
         </div>
       </Section>
 
       {/* 5. Process */}
       <Section id="process">
-        <SectionHeading title="Cara Saya Bekerja" subtitle="Professional Process" />
+        <SectionHeading title="How I Work" subtitle="Professional Process" />
         <div className="grid md:grid-cols-4 gap-8">
           {[
-            { step: "01", title: "Konsultasi", desc: "Ceritakan kebutuhan Anda. Saya dengarkan, bukan mengarahkan.", icon: Phone },
-            { step: "02", title: "Kurasi", desc: "Saya saring ratusan opsi, hanya sajikan yang benar-benar cocok.", icon: Search },
-            { step: "03", title: "Negosiasi", desc: "Memastikan harga terbaik dan dokumen bersih sebelum tandatangan.", icon: FileCheck },
-            { step: "04", title: "Serah Terima", desc: "Setelah kunci di tangan, saya tetap ada untuk after-sales.", icon: Key },
+            { step: "01", title: "Consultation", desc: "Tell me your goals. I listen, not push.", icon: Phone },
+            { step: "02", title: "Curation", desc: "I filter hundreds of options and present only what truly fits.", icon: Search },
+            { step: "03", title: "Negotiation", desc: "Securing the best price and clean documents before signing.", icon: FileCheck },
+            { step: "04", title: "Handover", desc: "Once the keys are yours, I stay available for after-sales support.", icon: Key },
           ].map((item, i) => (
             <div key={i} className="relative p-6 pt-12 border-l border-white/10">
               <div className="absolute -top-3 -left-3 bg-[#0a0a0a] border border-[#d4af37] text-[#d4af37] w-10 h-10 flex items-center justify-center font-serif text-lg">
@@ -252,23 +252,23 @@ export default function PropertyAgentDemo() {
 
       {/* 6. Testimonials */}
       <Section className="bg-[#0f0f0f]">
-        <SectionHeading title="Kata Klien Saya" subtitle="Trust & Results" />
+        <SectionHeading title="What My Clients Say" subtitle="Trust & Results" />
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              name: "Pak Budi Hartono",
-              role: "Direktur PT Sinar Makmur",
-              quote: "Sandra membantu kami menemukan ruko di BSD dalam 3 minggu. Proses negosiasi sangat profesional — kami hemat Rp 200 juta dari harga awal."
+              name: "Mr. Budi Hartono",
+              role: "Director, PT Sinar Makmur",
+              quote: "Sandra helped us find a shophouse in BSD within 3 weeks. The negotiation was incredibly professional — we saved Rp 200 million off the asking price."
             },
             {
-              name: "Ibu Ratna Dewi",
-              role: "Pengusaha Kuliner",
-              quote: "Sudah 2 kali beli properti lewat Sandra. Keduanya beres tanpa drama, semua dokumen rapi. Highly recommended untuk yang cari di Gading Serpong."
+              name: "Mrs. Ratna Dewi",
+              role: "F&B Entrepreneur",
+              quote: "I've bought property through Sandra twice. Both times went smoothly with zero drama and clean paperwork. Highly recommended for Gading Serpong."
             },
             {
-              name: "Pak Kevin Tanaka",
-              role: "CEO Startup",
-              quote: "Saya sibuk dan tidak punya waktu riset. Sandra handle segalanya — dari pencarian sampai AJB. Total waktu yang saya investasikan cuma 4 jam."
+              name: "Mr. Kevin Tanaka",
+              role: "CEO, Tech Startup",
+              quote: "I'm busy and had no time to research. Sandra handled everything — from search to title transfer. My total time invested was just 4 hours."
             }
           ].map((t, i) => (
             <div key={i} className="bg-[#0a0a0a] p-8 border border-white/5 relative">
@@ -301,15 +301,15 @@ export default function PropertyAgentDemo() {
             </div>
           </div>
           <div className="space-y-6">
-            <SectionHeading title="Kenapa Memilih Sandra?" align="left" />
+            <SectionHeading title="Why Choose Sandra?" align="left" />
             <p className="text-white/60 leading-relaxed text-lg">
-              "Saya memulai karier properti 12 tahun lalu dengan satu keyakinan sederhana: transaksi properti terbaik lahir dari kepercayaan, bukan tekanan."
+              "I started my property career 12 years ago with one simple belief: the best property deals are built on trust, not pressure."
             </p>
             <p className="text-white/60 leading-relaxed">
-              Spesialis kawasan BSD, Gading Serpong, dan Alam Sutera — saya membangun reputasi bukan dari volume, tapi dari kualitas. Lebih dari 350 klien telah mempercayakan keputusan terpenting mereka kepada saya.
+              Specialist in BSD, Gading Serpong, and Alam Sutera — I've built my reputation not on volume, but on quality. Over 350 clients have trusted me with their most important decisions.
             </p>
             <p className="text-white/60 leading-relaxed">
-              Tugas saya adalah mempertemukan kebutuhan unik Anda dengan properti yang tepat — dengan integritas, transparansi, dan hasil nyata.
+              My job is to match your unique needs with the right property — with integrity, transparency, and real results.
             </p>
             
             <div className="pt-6 border-t border-white/10 flex gap-8">
@@ -328,7 +328,7 @@ export default function PropertyAgentDemo() {
             </div>
 
             <div className="pt-8">
-              <GoldButton variant="outline">Mari Diskusi via WhatsApp</GoldButton>
+              <GoldButton variant="outline">Let's Talk via WhatsApp</GoldButton>
             </div>
           </div>
         </div>
@@ -339,17 +339,17 @@ export default function PropertyAgentDemo() {
         <div className="absolute inset-0 bg-[#d4af37] opacity-5" />
         <div className="max-w-4xl mx-auto text-center relative z-10 space-y-8">
           <h2 className="text-4xl md:text-6xl font-serif text-white">
-            Siap Menemukan <br/> <span className="text-[#d4af37]">Properti Impian</span> Anda?
+            Ready to Find Your <br/> <span className="text-[#d4af37]">Dream Property</span>?
           </h2>
           <p className="text-xl text-white/60">
-            Konsultasi pertama gratis. Tidak ada tekanan, tidak ada komitmen.
+            First consultation is free. No pressure, no commitment.
           </p>
           <div className="pt-4">
             <GoldButton className="text-lg px-12 py-6">
-              Chat Sandra Sekarang
+              Chat Sandra Now
             </GoldButton>
             <p className="text-xs text-white/30 mt-4 tracking-widest uppercase">
-              Rata-rata respons: &lt; 1 jam
+              Average response: &lt; 1 hour
             </p>
           </div>
         </div>
@@ -369,7 +369,7 @@ export default function PropertyAgentDemo() {
           </div>
           <div className="text-xs text-white/20 text-center md:text-right">
             © 2026 Sandra Wijaya Property.<br/>
-            Harga properti dapat berubah sewaktu-waktu.
+            Property prices are subject to change without notice.
           </div>
         </div>
       </footer>

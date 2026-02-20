@@ -28,7 +28,7 @@ export default function StickyCTA() {
       )}
     >
       <Link
-        href="https://wa.me/6285124354868?text=Halo%2C%20saya%20mau%20konsultasi%20gratis%20tentang%20Digital%20Headquarters"
+        href="https://wa.me/6285124354868?text=Hi%2C%20I%27d%20like%20a%20free%20consultation%20about%20Digital%20Headquarters"
         target="_blank"
         className={cn(
           "flex items-center gap-2 px-5 py-3 rounded-full",
@@ -38,7 +38,7 @@ export default function StickyCTA() {
         )}
       >
         <MessageCircle className="w-5 h-5" />
-        <span className="hidden sm:inline">Konsultasi Gratis</span>
+        <span className="hidden sm:inline">Free Consultation</span>
         <span className="sm:hidden">Chat</span>
       </Link>
     </div>
