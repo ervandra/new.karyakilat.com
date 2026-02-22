@@ -1,32 +1,25 @@
-# PRD: Demo — Tax Fortress (Strategic Tax Specialist)
-**Demo URL:** `/demo/tax`
-**Prepared by:** Russel (Virtual CEO, Karya Kilat)
-**Date:** February 2026
+---
+tags: [prd, demo, tech, karyakilat]
+---
+
+# PRD: Demo — Tax Fortress (Strategic Tax)
+
+**Owner Persona:** Ronald Setiawan (IAI Member, Brevet A&B)
+**Target Market:** High-Growth SME Owners facing SP2DK anxiety.
 
 ---
 
-## 1. Industry Research (Taxation Indonesia 2026)
-- **Market:** SMEs (UMKM) and Mid-size Corporate leaders in Greater Jakarta.
-- **Pain Points:** 
-    - **SP2DK Anxiety:** Receving a letter from the tax office and not knowing how to reply.
-    - **Data Chaos:** Messy bookkeeping leads to overpaying taxes (or underpaying and getting fined).
-    - **Regulatory Fear:** Frequent changes in Indonesian tax laws (UU HPP etc.).
-- **Competitor Gap:** Old-school accounting firms (pen-and-paper or messy Excel) with slow response times.
+## 1. Industry Research
+- **Pain Points:** Takut surat pajak (SP2DK), denda membengkak, bookkeeping berantakan.
+- **Opportunity:** Modernizing tax services dengan "Institutional Trust" (ala DJP) + Tech transparansi.
 
-## 2. Owner Persona
-- **Name:** Ronald Setiawan (Tax Strategist)
-- **Position:** Founder, Ronald & Partners.
-- **Vibe:** Strategic, Data-Driven, Shield-like.
+## 2. Offer Architecture
+- **Lite Shield (Rp 2.5M/mo):** Quarterly strategy + Annual SPT.
+- **Corporate Guard (Rp 7.5M/mo):** Monthly recon + SP2DK Shield.
+- **Audit Defense:** Custom representation for active disputes.
+- **USP:** Real-time compliance dashboard, 24h response guarantee, Fixed fee (no surprises).
 
-## 3. Target Market Persona
-- **Primary:** SME Business Owners (30-50) facing revenue growth but struggling with compliance.
-- **Need:** Peace of mind, automated data reconciliation, Audit defense.
-
-## 4. Offer Architecture
-- **"The Tax Fortress Guarantee":** Proactive legal deduction mapping + 24/7 SP2DK Consultation + Automated Reconciliation Dashboard.
-- **Pricing:** Fixed Monthly Retainer (no surprise hourly bills).
-
-## 5. Design Direction (Archetype: Tech-Forward)
-- **Palette:** Dark Grey (#0D1117), Electric Blue (#0EA5E9), Purple (#8B5CF6).
-- **Fonts:** Bold Sans-serif headings + Monospace tech accents.
-- **Tone:** Shield-like, Strategic, Bulletproof.
+## 3. Design Direction
+- **Archetype:** [[🏭 Production/SOP-02 Design System#⚡ Archetype B Tech-Forward|Tech-Forward]] (adapted for Government Trust)
+- **Layout:** Columnar, Institutional navy palette, Compliance cards.
+- **Tone:** Bulletproof, Strategic, "The Fortress".
